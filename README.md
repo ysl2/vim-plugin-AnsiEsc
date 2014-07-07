@@ -4,6 +4,8 @@ This is a [Vim script №302: AnsiEsc.vim](http://www.vim.org/scripts/script.php
 updated to [latest author's version](http://www.drchip.org/astronaut/vim/index.html#ANSIESC)
 with several fixes/improvements.
 
+Download .zip/.vmb from http://www.vim.org/scripts/script.php?script_id=4979
+
 ## Changes
 
 * updated to latest author's version: **13e** (Dec 06, 2012)
