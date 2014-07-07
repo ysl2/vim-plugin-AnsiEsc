@@ -1,3 +1,15 @@
+# AnsiEsc.vim (improved)
+
+This is a [Vim script №302: AnsiEsc.vim](http://www.vim.org/scripts/script.php?script_id=302)
+updated to [latest author's version](http://www.drchip.org/astronaut/vim/index.html#ANSIESC)
+with several fixes/improvements.
+
+## Changes
+
+* updated to latest author's version: **13e** (Dec 06, 2012)
+
+## Original README
+
 This is a mirror of http://www.vim.org/scripts/script.php?script_id=302
 
 Files with ANSI escape sequences look good when dumped onto a terminal that accepts them, but have been a distracting clutter when edited via vim.  The AnsiEsc.vim file, when sourced, will conceal Ansi escape sequences but will cause subsequent text to be colored as the escape sequence specifies when used with Vince Negri's conceal patch.  AnsiEsc.vim v3 or later uses the conceal patch to accomplish this.
