@@ -1,4 +1,4 @@
-# AnsiEsc.vim (improved)
+# Improved AnsiEsc.vim
 
 This is a [Vim script №302: AnsiEsc.vim](http://www.vim.org/scripts/script.php?script_id=302)
 updated to [latest author's version](http://www.drchip.org/astronaut/vim/index.html#ANSIESC)
