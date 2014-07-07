@@ -16,11 +16,13 @@ set cpo&vim
 com! -bang -nargs=0 AnsiEsc	:call AnsiEsc#AnsiEsc(<bang>0)
 
 " DrChip Menu Support: {{{2
-if has("gui_running") && has("menu") && &go =~ 'm'
- if !exists("g:DrChipTopLvlMenu")
-  let g:DrChipTopLvlMenu= "DrChip."
+if !exists('g:no_drchip_menu') && !exists('g:no_ansiesc_menu')
+ if has("gui_running") && has("menu") && &go =~ 'm'
+  if !exists("g:DrChipTopLvlMenu")
+   let g:DrChipTopLvlMenu= "DrChip."
+  endif
+  exe 'menu '.g:DrChipTopLvlMenu.'AnsiEsc.Start<tab>:AnsiEsc		:AnsiEsc<cr>'
  endif
- exe 'menu '.g:DrChipTopLvlMenu.'AnsiEsc.Start<tab>:AnsiEsc		:AnsiEsc<cr>'
 endif
 
 " ---------------------------------------------------------------------
