@@ -8,6 +8,7 @@ with several fixes/improvements.
 
 * updated to latest author's version: **13e** (Dec 06, 2012)
 * add support for simple ANSI sequences like "bold" (without defining color)
+* add support for 16-color 'light' escape sequences (by Andy Berdan, merged from https://github.com/berdandy/AnsiEsc.vim)
 
 ## Original README
 

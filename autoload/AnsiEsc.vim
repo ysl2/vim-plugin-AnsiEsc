@@ -120,16 +120,28 @@ fun! AnsiEsc#AnsiEsc(rebuild)
   syn region ansiMagenta	start="\e\[;\=0\{0,2};\=35m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiCyan		start="\e\[;\=0\{0,2};\=36m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiWhite		start="\e\[;\=0\{0,2};\=37m" end="\e\["me=e-2 contains=ansiConceal
+  " set default ansi to white
+  syn region ansiWhite          start="\e\[;\=0\{0,2};\=39m" end="\e\["me=e-2 contains=ansiConceal
 
   syn region ansiBold     	start="\e\[;\=0\{0,2};\=1m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldBlack	start="\e\[;\=0\{0,2};\=\%(1;30\|30;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  " this is supposed to be bold-black, ie, dark grey, but it doesn't work well
+  " on a lot of displays. We'll settle for non-bold white
+  syn region ansiWhite	        start="\e\[;\=0\{0,2};\=90m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldRed	start="\e\[;\=0\{0,2};\=\%(1;31\|31;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldRed        start="\e\[;\=0\{0,2};\=91m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldGreen	start="\e\[;\=0\{0,2};\=\%(1;32\|32;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldGreen      start="\e\[;\=0\{0,2};\=92m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldYellow	start="\e\[;\=0\{0,2};\=\%(1;33\|33;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldYellow     start="\e\[;\=0\{0,2};\=93m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldBlue	start="\e\[;\=0\{0,2};\=\%(1;34\|34;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldBlue       start="\e\[;\=0\{0,2};\=94m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldMagenta	start="\e\[;\=0\{0,2};\=\%(1;35\|35;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldMagenta    start="\e\[;\=0\{0,2};\=95m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldCyan	start="\e\[;\=0\{0,2};\=\%(1;36\|36;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldCyan       start="\e\[;\=0\{0,2};\=96m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldWhite	start="\e\[;\=0\{0,2};\=\%(1;37\|37;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldWhite      start="\e\[;\=0\{0,2};\=97m" end="\e\["me=e-2 contains=ansiConceal
 
   syn region ansiStandout     	start="\e\[;\=0\{0,2};\=\%(1;\)\=3m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiStandoutBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;30\|30;3\)m" end="\e\["me=e-2 contains=ansiConceal
