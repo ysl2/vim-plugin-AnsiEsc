@@ -121,6 +121,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
   syn region ansiCyan		start="\e\[;\=0\{0,2};\=36m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiWhite		start="\e\[;\=0\{0,2};\=37m" end="\e\["me=e-2 contains=ansiConceal
 
+  syn region ansiBold     	start="\e\[;\=0\{0,2};\=1m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldBlack	start="\e\[;\=0\{0,2};\=\%(1;30\|30;1\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldRed	start="\e\[;\=0\{0,2};\=\%(1;31\|31;1\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldGreen	start="\e\[;\=0\{0,2};\=\%(1;32\|32;1\)m" end="\e\["me=e-2 contains=ansiConceal
@@ -130,6 +131,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
   syn region ansiBoldCyan	start="\e\[;\=0\{0,2};\=\%(1;36\|36;1\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldWhite	start="\e\[;\=0\{0,2};\=\%(1;37\|37;1\)m" end="\e\["me=e-2 contains=ansiConceal
 
+  syn region ansiStandout     	start="\e\[;\=0\{0,2};\=\%(1;\)\=3m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiStandoutBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;30\|30;3\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiStandoutRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;31\|31;3\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiStandoutGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;32\|32;3\)m" end="\e\["me=e-2 contains=ansiConceal
@@ -139,6 +141,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
   syn region ansiStandoutCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;36\|36;3\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiStandoutWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;37\|37;3\)m" end="\e\["me=e-2 contains=ansiConceal
 
+  syn region ansiItalic     	start="\e\[;\=0\{0,2};\=\%(1;\)\=2m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiItalicBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;30\|30;2\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiItalicRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;31\|31;2\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiItalicGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;32\|32;2\)m" end="\e\["me=e-2 contains=ansiConceal
@@ -148,6 +151,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
   syn region ansiItalicCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;36\|36;2\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiItalicWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;37\|37;2\)m" end="\e\["me=e-2 contains=ansiConceal
 
+  syn region ansiUnderline	start="\e\[;\=0\{0,2};\=\%(1;\)\=4m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiUnderlineBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;30\|30;4\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiUnderlineRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;31\|31;4\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiUnderlineGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;32\|32;4\)m" end="\e\["me=e-2 contains=ansiConceal
@@ -157,6 +161,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
   syn region ansiUnderlineCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;36\|36;4\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiUnderlineWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;37\|37;4\)m" end="\e\["me=e-2 contains=ansiConceal
 
+  syn region ansiBlink          start="\e\[;\=0\{0,2};\=\%(1;\)\=5m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBlinkBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;30\|30;5\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBlinkRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;31\|31;5\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBlinkGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;32\|32;5\)m" end="\e\["me=e-2 contains=ansiConceal
@@ -166,6 +171,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
   syn region ansiBlinkCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;36\|36;5\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBlinkWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;37\|37;5\)m" end="\e\["me=e-2 contains=ansiConceal
 
+  syn region ansiRapidBlink	start="\e\[;\=0\{0,2};\=\%(1;\)\=6m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiRapidBlinkBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;30\|30;6\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiRapidBlinkRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;31\|31;6\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiRapidBlinkGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;32\|32;6\)m" end="\e\["me=e-2 contains=ansiConceal
@@ -504,6 +510,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiCyanBg            ctermbg=cyan       guibg=cyan                                         cterm=none         gui=none
    hi ansiWhiteBg           ctermbg=white      guibg=white                                        cterm=none         gui=none
 
+   hi ansiBold                                                                                    cterm=bold         gui=bold
    hi ansiBoldBlack         ctermfg=black      guifg=black                                        cterm=bold         gui=bold
    hi ansiBoldRed           ctermfg=red        guifg=red                                          cterm=bold         gui=bold
    hi ansiBoldGreen         ctermfg=green      guifg=green                                        cterm=bold         gui=bold
@@ -513,6 +520,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBoldCyan          ctermfg=cyan       guifg=cyan                                         cterm=bold         gui=bold
    hi ansiBoldWhite         ctermfg=white      guifg=white                                        cterm=bold         gui=bold
 
+   hi ansiStandout                                                                                cterm=standout     gui=standout
    hi ansiStandoutBlack     ctermfg=black      guifg=black                                        cterm=standout     gui=standout
    hi ansiStandoutRed       ctermfg=red        guifg=red                                          cterm=standout     gui=standout
    hi ansiStandoutGreen     ctermfg=green      guifg=green                                        cterm=standout     gui=standout
@@ -522,6 +530,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiStandoutCyan      ctermfg=cyan       guifg=cyan                                         cterm=standout     gui=standout
    hi ansiStandoutWhite     ctermfg=white      guifg=white                                        cterm=standout     gui=standout
 
+   hi ansiItalic                                                                                  cterm=italic       gui=italic
    hi ansiItalicBlack       ctermfg=black      guifg=black                                        cterm=italic       gui=italic
    hi ansiItalicRed         ctermfg=red        guifg=red                                          cterm=italic       gui=italic
    hi ansiItalicGreen       ctermfg=green      guifg=green                                        cterm=italic       gui=italic
@@ -531,6 +540,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiItalicCyan        ctermfg=cyan       guifg=cyan                                         cterm=italic       gui=italic
    hi ansiItalicWhite       ctermfg=white      guifg=white                                        cterm=italic       gui=italic
 
+   hi ansiUnderline                                                                               cterm=underline    gui=underline
    hi ansiUnderlineBlack    ctermfg=black      guifg=black                                        cterm=underline    gui=underline
    hi ansiUnderlineRed      ctermfg=red        guifg=red                                          cterm=underline    gui=underline
    hi ansiUnderlineGreen    ctermfg=green      guifg=green                                        cterm=underline    gui=underline
@@ -540,6 +550,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiUnderlineCyan     ctermfg=cyan       guifg=cyan                                         cterm=underline    gui=underline
    hi ansiUnderlineWhite    ctermfg=white      guifg=white                                        cterm=underline    gui=underline
 
+   hi ansiBlink                                                                                   cterm=standout     gui=undercurl
    hi ansiBlinkBlack        ctermfg=black      guifg=black                                        cterm=standout     gui=undercurl
    hi ansiBlinkRed          ctermfg=red        guifg=red                                          cterm=standout     gui=undercurl
    hi ansiBlinkGreen        ctermfg=green      guifg=green                                        cterm=standout     gui=undercurl
@@ -549,6 +560,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlinkCyan         ctermfg=cyan       guifg=cyan                                         cterm=standout     gui=undercurl
    hi ansiBlinkWhite        ctermfg=white      guifg=white                                        cterm=standout     gui=undercurl
 
+   hi ansiRapidBlink                                                                              cterm=standout     gui=undercurl
    hi ansiRapidBlinkBlack   ctermfg=black      guifg=black                                        cterm=standout     gui=undercurl
    hi ansiRapidBlinkRed     ctermfg=red        guifg=red                                          cterm=standout     gui=undercurl
    hi ansiRapidBlinkGreen   ctermfg=green      guifg=green                                        cterm=standout     gui=undercurl
@@ -683,6 +695,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiCyanBg            ctermbg=cyan       guibg=cyan                                         cterm=none         gui=none
    hi ansiWhiteBg           ctermbg=white      guibg=white                                        cterm=none         gui=none
 
+   hi ansiBold                                                                                    cterm=bold         gui=bold
    hi ansiBoldBlack         ctermfg=black      guifg=black                                        cterm=bold         gui=bold
    hi ansiBoldRed           ctermfg=red        guifg=red                                          cterm=bold         gui=bold
    hi ansiBoldGreen         ctermfg=green      guifg=green                                        cterm=bold         gui=bold
@@ -692,6 +705,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBoldCyan          ctermfg=cyan       guifg=cyan                                         cterm=bold         gui=bold
    hi ansiBoldWhite         ctermfg=white      guifg=white                                        cterm=bold         gui=bold
 
+   hi ansiStandout                                                                                cterm=standout     gui=standout
    hi ansiStandoutBlack     ctermfg=black      guifg=black                                        cterm=standout     gui=standout
    hi ansiStandoutRed       ctermfg=red        guifg=red                                          cterm=standout     gui=standout
    hi ansiStandoutGreen     ctermfg=green      guifg=green                                        cterm=standout     gui=standout
@@ -701,6 +715,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiStandoutCyan      ctermfg=cyan       guifg=cyan                                         cterm=standout     gui=standout
    hi ansiStandoutWhite     ctermfg=white      guifg=white                                        cterm=standout     gui=standout
 
+   hi ansiItalic                                                                                  cterm=italic       gui=italic
    hi ansiItalicBlack       ctermfg=black      guifg=black                                        cterm=italic       gui=italic
    hi ansiItalicRed         ctermfg=red        guifg=red                                          cterm=italic       gui=italic
    hi ansiItalicGreen       ctermfg=green      guifg=green                                        cterm=italic       gui=italic
@@ -710,6 +725,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiItalicCyan        ctermfg=cyan       guifg=cyan                                         cterm=italic       gui=italic
    hi ansiItalicWhite       ctermfg=white      guifg=white                                        cterm=italic       gui=italic
 
+   hi ansiUnderline                                                                               cterm=underline    gui=underline
    hi ansiUnderlineBlack    ctermfg=black      guifg=black                                        cterm=underline    gui=underline
    hi ansiUnderlineRed      ctermfg=red        guifg=red                                          cterm=underline    gui=underline
    hi ansiUnderlineGreen    ctermfg=green      guifg=green                                        cterm=underline    gui=underline
@@ -719,6 +735,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiUnderlineCyan     ctermfg=cyan       guifg=cyan                                         cterm=underline    gui=underline
    hi ansiUnderlineWhite    ctermfg=white      guifg=white                                        cterm=underline    gui=underline
 
+   hi ansiBlink                                                                                   cterm=standout     gui=undercurl
    hi ansiBlinkBlack        ctermfg=black      guifg=black                                        cterm=standout     gui=undercurl
    hi ansiBlinkRed          ctermfg=red        guifg=red                                          cterm=standout     gui=undercurl
    hi ansiBlinkGreen        ctermfg=green      guifg=green                                        cterm=standout     gui=undercurl
@@ -728,6 +745,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlinkCyan         ctermfg=cyan       guifg=cyan                                         cterm=standout     gui=undercurl
    hi ansiBlinkWhite        ctermfg=white      guifg=white                                        cterm=standout     gui=undercurl
 
+   hi ansiRapidBlink                                                                              cterm=standout     gui=undercurl
    hi ansiRapidBlinkBlack   ctermfg=black      guifg=black                                        cterm=standout     gui=undercurl
    hi ansiRapidBlinkRed     ctermfg=red        guifg=red                                          cterm=standout     gui=undercurl
    hi ansiRapidBlinkGreen   ctermfg=green      guifg=green                                        cterm=standout     gui=undercurl

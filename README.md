@@ -7,6 +7,7 @@ with several fixes/improvements.
 ## Changes
 
 * updated to latest author's version: **13e** (Dec 06, 2012)
+* add support for simple ANSI sequences like "bold" (without defining color)
 
 ## Original README
 
