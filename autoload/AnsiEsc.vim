@@ -116,6 +116,13 @@ fun! AnsiEsc#AnsiEsc(rebuild)
   syn region ansiNone		start="\e\[[01;]m"  end="\e\["me=e-2 contains=ansiConceal
   syn region ansiNone		start="\e\[m"       end="\e\["me=e-2 contains=ansiConceal
 
+  " disable bold/italic/etc. - no way to disable one attribute, so disable them all
+  syn region ansiNone	        start="\e\[22m"     end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiNone		start="\e\[23m"     end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiNone		start="\e\[24m"     end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiNone		start="\e\[27m"     end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiNone		start="\e\[29m"     end="\e\["me=e-2 contains=ansiConceal
+
   syn region ansiBlack		start="\e\[;\=0\{0,2};\=30m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiRed		start="\e\[;\=0\{0,2};\=31m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiGreen		start="\e\[;\=0\{0,2};\=32m" end="\e\["me=e-2 contains=ansiConceal

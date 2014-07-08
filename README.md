@@ -13,6 +13,7 @@ Download .zip/.vmb from http://www.vim.org/scripts/script.php?script_id=4979
 * add support for 16-color 'light' escape sequences (by Andy Berdan, merged from https://github.com/berdandy/AnsiEsc.vim)
 * disable `\swp` and `\rwp` maps if `g:no_plugin_maps` or `g:no_cecutil_maps` exists
 * disable DrChip/AnsiEsc menu if `g:no_drchip_menu` or `g:no_ansiesc_menu` exists
+* add support for simple ANSI sequences like disable bold/italic/etc.
 
 ## Original README
 
