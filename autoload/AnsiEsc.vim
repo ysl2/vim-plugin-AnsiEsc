@@ -135,84 +135,84 @@ fun! AnsiEsc#AnsiEsc(rebuild)
   syn region ansiWhite          start="\e\[;\=0\{0,2};\=39m" end="\e\["me=e-2 contains=ansiConceal
 
   syn region ansiBold     	start="\e\[;\=0\{0,2};\=1m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBoldBlack	start="\e\[;\=0\{0,2};\=\%(1;30\|30;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldBlack	start="\e\[;\=0\{0,2};\=\%(1;30\|30;0\{0,2}1\)m" end="\e\["me=e-2 contains=ansiConceal
   " this is supposed to be bold-black, ie, dark grey, but it doesn't work well
   " on a lot of displays. We'll settle for non-bold white
   syn region ansiWhite	        start="\e\[;\=0\{0,2};\=90m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBoldRed	start="\e\[;\=0\{0,2};\=\%(1;31\|31;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldRed	start="\e\[;\=0\{0,2};\=\%(1;31\|31;0\{0,2}1\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldRed        start="\e\[;\=0\{0,2};\=91m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBoldGreen	start="\e\[;\=0\{0,2};\=\%(1;32\|32;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldGreen	start="\e\[;\=0\{0,2};\=\%(1;32\|32;0\{0,2}1\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldGreen      start="\e\[;\=0\{0,2};\=92m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBoldYellow	start="\e\[;\=0\{0,2};\=\%(1;33\|33;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldYellow	start="\e\[;\=0\{0,2};\=\%(1;33\|33;0\{0,2}1\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldYellow     start="\e\[;\=0\{0,2};\=93m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBoldBlue	start="\e\[;\=0\{0,2};\=\%(1;34\|34;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldBlue	start="\e\[;\=0\{0,2};\=\%(1;34\|34;0\{0,2}1\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldBlue       start="\e\[;\=0\{0,2};\=94m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBoldMagenta	start="\e\[;\=0\{0,2};\=\%(1;35\|35;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldMagenta	start="\e\[;\=0\{0,2};\=\%(1;35\|35;0\{0,2}1\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldMagenta    start="\e\[;\=0\{0,2};\=95m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBoldCyan	start="\e\[;\=0\{0,2};\=\%(1;36\|36;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldCyan	start="\e\[;\=0\{0,2};\=\%(1;36\|36;0\{0,2}1\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldCyan       start="\e\[;\=0\{0,2};\=96m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBoldWhite	start="\e\[;\=0\{0,2};\=\%(1;37\|37;1\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBoldWhite	start="\e\[;\=0\{0,2};\=\%(1;37\|37;0\{0,2}1\)m" end="\e\["me=e-2 contains=ansiConceal
   syn region ansiBoldWhite      start="\e\[;\=0\{0,2};\=97m" end="\e\["me=e-2 contains=ansiConceal
 
   syn region ansiStandout     	start="\e\[;\=0\{0,2};\=\%(1;\)\=3m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiStandoutBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;30\|30;3\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiStandoutRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;31\|31;3\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiStandoutGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;32\|32;3\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiStandoutYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;33\|33;3\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiStandoutBlue	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;34\|34;3\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiStandoutMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;35\|35;3\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiStandoutCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;36\|36;3\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiStandoutWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;37\|37;3\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiStandoutBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;30\|30;0\{0,2}3\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiStandoutRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;31\|31;0\{0,2}3\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiStandoutGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;32\|32;0\{0,2}3\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiStandoutYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;33\|33;0\{0,2}3\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiStandoutBlue	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;34\|34;0\{0,2}3\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiStandoutMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;35\|35;0\{0,2}3\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiStandoutCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;36\|36;0\{0,2}3\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiStandoutWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(3;37\|37;0\{0,2}3\)m" end="\e\["me=e-2 contains=ansiConceal
 
   syn region ansiItalic     	start="\e\[;\=0\{0,2};\=\%(1;\)\=2m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiItalicBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;30\|30;2\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiItalicRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;31\|31;2\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiItalicGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;32\|32;2\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiItalicYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;33\|33;2\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiItalicBlue	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;34\|34;2\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiItalicMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;35\|35;2\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiItalicCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;36\|36;2\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiItalicWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;37\|37;2\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiItalicBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;30\|30;0\{0,2}2\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiItalicRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;31\|31;0\{0,2}2\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiItalicGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;32\|32;0\{0,2}2\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiItalicYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;33\|33;0\{0,2}2\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiItalicBlue	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;34\|34;0\{0,2}2\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiItalicMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;35\|35;0\{0,2}2\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiItalicCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;36\|36;0\{0,2}2\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiItalicWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(2;37\|37;0\{0,2}2\)m" end="\e\["me=e-2 contains=ansiConceal
 
   syn region ansiUnderline	start="\e\[;\=0\{0,2};\=\%(1;\)\=4m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiUnderlineBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;30\|30;4\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiUnderlineRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;31\|31;4\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiUnderlineGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;32\|32;4\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiUnderlineYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;33\|33;4\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiUnderlineBlue	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;34\|34;4\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiUnderlineMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;35\|35;4\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiUnderlineCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;36\|36;4\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiUnderlineWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;37\|37;4\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiUnderlineBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;30\|30;0\{0,2}4\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiUnderlineRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;31\|31;0\{0,2}4\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiUnderlineGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;32\|32;0\{0,2}4\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiUnderlineYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;33\|33;0\{0,2}4\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiUnderlineBlue	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;34\|34;0\{0,2}4\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiUnderlineMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;35\|35;0\{0,2}4\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiUnderlineCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;36\|36;0\{0,2}4\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiUnderlineWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(4;37\|37;0\{0,2}4\)m" end="\e\["me=e-2 contains=ansiConceal
 
   syn region ansiBlink          start="\e\[;\=0\{0,2};\=\%(1;\)\=5m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBlinkBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;30\|30;5\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBlinkRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;31\|31;5\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBlinkGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;32\|32;5\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBlinkYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;33\|33;5\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBlinkBlue	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;34\|34;5\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBlinkMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;35\|35;5\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBlinkCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;36\|36;5\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiBlinkWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;37\|37;5\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBlinkBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;30\|30;0\{0,2}5\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBlinkRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;31\|31;0\{0,2}5\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBlinkGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;32\|32;0\{0,2}5\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBlinkYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;33\|33;0\{0,2}5\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBlinkBlue	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;34\|34;0\{0,2}5\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBlinkMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;35\|35;0\{0,2}5\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBlinkCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;36\|36;0\{0,2}5\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiBlinkWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(5;37\|37;0\{0,2}5\)m" end="\e\["me=e-2 contains=ansiConceal
 
   syn region ansiRapidBlink	start="\e\[;\=0\{0,2};\=\%(1;\)\=6m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRapidBlinkBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;30\|30;6\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRapidBlinkRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;31\|31;6\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRapidBlinkGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;32\|32;6\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRapidBlinkYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;33\|33;6\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRapidBlinkBlue	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;34\|34;6\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRapidBlinkMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;35\|35;6\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRapidBlinkCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;36\|36;6\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRapidBlinkWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;37\|37;6\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRapidBlinkBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;30\|30;0\{0,2}6\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRapidBlinkRed	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;31\|31;0\{0,2}6\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRapidBlinkGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;32\|32;0\{0,2}6\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRapidBlinkYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;33\|33;0\{0,2}6\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRapidBlinkBlue	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;34\|34;0\{0,2}6\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRapidBlinkMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;35\|35;0\{0,2}6\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRapidBlinkCyan	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;36\|36;0\{0,2}6\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRapidBlinkWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(6;37\|37;0\{0,2}6\)m" end="\e\["me=e-2 contains=ansiConceal
 
   syn region ansiRV	 start="\e\[;\=0\{0,2};\=\%(1;\)\=7m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRVBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;30\|30;7\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRVRed		start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;31\|31;7\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRVGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;32\|32;7\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRVYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;33\|33;7\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRVBlue		start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;34\|34;7\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRVMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;35\|35;7\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRVCyan		start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;36\|36;7\)m" end="\e\["me=e-2 contains=ansiConceal
-  syn region ansiRVWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;37\|37;7\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRVBlack	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;30\|30;0\{0,2}7\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRVRed		start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;31\|31;0\{0,2}7\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRVGreen	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;32\|32;0\{0,2}7\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRVYellow	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;33\|33;0\{0,2}7\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRVBlue		start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;34\|34;0\{0,2}7\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRVMagenta	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;35\|35;0\{0,2}7\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRVCyan		start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;36\|36;0\{0,2}7\)m" end="\e\["me=e-2 contains=ansiConceal
+  syn region ansiRVWhite	start="\e\[;\=0\{0,2};\=\%(1;\)\=\%(7;37\|37;0\{0,2}7\)m" end="\e\["me=e-2 contains=ansiConceal
 
   if v:version >= 703
    " handles implicit background highlighting
