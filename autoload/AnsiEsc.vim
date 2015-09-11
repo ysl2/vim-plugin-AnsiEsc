@@ -1409,266 +1409,266 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    " eight-color handling: {{{3
    " ---------------------
 "   call Decho("set up 8-color highlighting groups")
-   hi ansiBlack             ctermfg=black      guifg=black                                        cterm=none         gui=none
-   hi ansiRed               ctermfg=red        guifg=red                                          cterm=none         gui=none
-   hi ansiGreen             ctermfg=green      guifg=green                                        cterm=none         gui=none
-   hi ansiYellow            ctermfg=yellow     guifg=yellow                                       cterm=none         gui=none
-   hi ansiBlue              ctermfg=blue       guifg=blue                                         cterm=none         gui=none
-   hi ansiMagenta           ctermfg=magenta    guifg=magenta                                      cterm=none         gui=none
-   hi ansiCyan              ctermfg=cyan       guifg=cyan                                         cterm=none         gui=none
-   hi ansiWhite             ctermfg=white      guifg=white                                        cterm=none         gui=none
-   hi ansiGray              ctermfg=gray       guifg=gray                                         cterm=none         gui=none
+   hi ansiBlack             ctermfg=Black      guifg=Black                                        cterm=NONE         gui=NONE
+   hi ansiRed               ctermfg=DarkRed        guifg=DarkRed                                          cterm=NONE         gui=NONE
+   hi ansiGreen             ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=NONE         gui=NONE
+   hi ansiYellow            ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=NONE         gui=NONE
+   hi ansiBlue              ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=NONE         gui=NONE
+   hi ansiMagenta           ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=NONE         gui=NONE
+   hi ansiCyan              ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=NONE         gui=NONE
+   hi ansiWhite             ctermfg=LightGray      guifg=LightGray                                        cterm=NONE         gui=NONE
+   hi ansiGray              ctermfg=DarkGray       guifg=DarkGray                                         cterm=NONE         gui=NONE
 
-   hi ansiDefaultBg         ctermbg=none       guibg=none                                         cterm=none         gui=none
-   hi ansiBlackBg           ctermbg=black      guibg=black                                        cterm=none         gui=none
-   hi ansiRedBg             ctermbg=red        guibg=red                                          cterm=none         gui=none
-   hi ansiGreenBg           ctermbg=green      guibg=green                                        cterm=none         gui=none
-   hi ansiYellowBg          ctermbg=yellow     guibg=yellow                                       cterm=none         gui=none
-   hi ansiBlueBg            ctermbg=blue       guibg=blue                                         cterm=none         gui=none
-   hi ansiMagentaBg         ctermbg=magenta    guibg=magenta                                      cterm=none         gui=none
-   hi ansiCyanBg            ctermbg=cyan       guibg=cyan                                         cterm=none         gui=none
-   hi ansiWhiteBg           ctermbg=white      guibg=white                                        cterm=none         gui=none
-   hi ansiGrayBg            ctermbg=gray       guibg=gray                                         cterm=none         gui=none
+   hi ansiDefaultBg         ctermbg=NONE       guibg=NONE                                         cterm=NONE         gui=NONE
+   hi ansiBlackBg           ctermbg=Black      guibg=Black                                        cterm=NONE         gui=NONE
+   hi ansiRedBg             ctermbg=DarkRed        guibg=DarkRed                                          cterm=NONE         gui=NONE
+   hi ansiGreenBg           ctermbg=DarkGreen      guibg=DarkGreen                                        cterm=NONE         gui=NONE
+   hi ansiYellowBg          ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=NONE         gui=NONE
+   hi ansiBlueBg            ctermbg=DarkBlue       guibg=DarkBlue                                         cterm=NONE         gui=NONE
+   hi ansiMagentaBg         ctermbg=DarkMagenta    guibg=DarkMagenta                                      cterm=NONE         gui=NONE
+   hi ansiCyanBg            ctermbg=DarkCyan       guibg=DarkCyan                                         cterm=NONE         gui=NONE
+   hi ansiWhiteBg           ctermbg=LightGray      guibg=LightGray                                        cterm=NONE         gui=NONE
+   hi ansiGrayBg            ctermbg=DarkGray       guibg=DarkGray                                         cterm=NONE         gui=NONE
 
-   hi ansiBlackFg           ctermfg=black      guifg=black                                        cterm=none         gui=none
-   hi ansiRedFg             ctermfg=red        guifg=red                                          cterm=none         gui=none
-   hi ansiGreenFg           ctermfg=green      guifg=green                                        cterm=none         gui=none
-   hi ansiYellowFg          ctermfg=yellow     guifg=yellow                                       cterm=none         gui=none
-   hi ansiBlueFg            ctermfg=blue       guifg=blue                                         cterm=none         gui=none
-   hi ansiMagentaFg         ctermfg=magenta    guifg=magenta                                      cterm=none         gui=none
-   hi ansiCyanFg            ctermfg=cyan       guifg=cyan                                         cterm=none         gui=none
-   hi ansiWhiteFg           ctermfg=white      guifg=white                                        cterm=none         gui=none
-   hi ansiGrayFg            ctermfg=gray       guifg=gray                                         cterm=none         gui=none
+   hi ansiBlackFg           ctermfg=Black      guifg=Black                                        cterm=NONE         gui=NONE
+   hi ansiRedFg             ctermfg=DarkRed        guifg=DarkRed                                          cterm=NONE         gui=NONE
+   hi ansiGreenFg           ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=NONE         gui=NONE
+   hi ansiYellowFg          ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=NONE         gui=NONE
+   hi ansiBlueFg            ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=NONE         gui=NONE
+   hi ansiMagentaFg         ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=NONE         gui=NONE
+   hi ansiCyanFg            ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=NONE         gui=NONE
+   hi ansiWhiteFg           ctermfg=LightGray      guifg=LightGray                                        cterm=NONE         gui=NONE
+   hi ansiGrayFg            ctermfg=DarkGray       guifg=DarkGray                                         cterm=NONE         gui=NONE
 
-   hi ansiDefaultReverseBg         ctermbg=none       guibg=none                                         cterm=reverse         gui=reverse
-   hi ansiBlackReverseBg           ctermbg=black      guibg=black                                        cterm=reverse         gui=reverse
-   hi ansiRedReverseBg             ctermbg=red        guibg=red                                          cterm=reverse         gui=reverse
-   hi ansiGreenReverseBg           ctermbg=green      guibg=green                                        cterm=reverse         gui=reverse
-   hi ansiYellowReverseBg          ctermbg=yellow     guibg=yellow                                       cterm=reverse         gui=reverse
-   hi ansiBlueReverseBg            ctermbg=blue       guibg=blue                                         cterm=reverse         gui=reverse
-   hi ansiMagentaReverseBg         ctermbg=magenta    guibg=magenta                                      cterm=reverse         gui=reverse
-   hi ansiCyanReverseBg            ctermbg=cyan       guibg=cyan                                         cterm=reverse         gui=reverse
-   hi ansiWhiteReverseBg           ctermbg=white      guibg=white                                        cterm=reverse         gui=reverse
+   hi ansiDefaultReverseBg         ctermbg=NONE       guibg=NONE                                         cterm=reverse         gui=reverse
+   hi ansiBlackReverseBg           ctermbg=Black      guibg=Black                                        cterm=reverse         gui=reverse
+   hi ansiRedReverseBg             ctermbg=DarkRed        guibg=DarkRed                                          cterm=reverse         gui=reverse
+   hi ansiGreenReverseBg           ctermbg=DarkGreen      guibg=DarkGreen                                        cterm=reverse         gui=reverse
+   hi ansiYellowReverseBg          ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=reverse         gui=reverse
+   hi ansiBlueReverseBg            ctermbg=DarkBlue       guibg=DarkBlue                                         cterm=reverse         gui=reverse
+   hi ansiMagentaReverseBg         ctermbg=DarkMagenta    guibg=DarkMagenta                                      cterm=reverse         gui=reverse
+   hi ansiCyanReverseBg            ctermbg=DarkCyan       guibg=DarkCyan                                         cterm=reverse         gui=reverse
+   hi ansiWhiteReverseBg           ctermbg=LightGray      guibg=LightGray                                        cterm=reverse         gui=reverse
 
    hi ansiBold                                                                                    cterm=bold         gui=bold
    hi ansiBoldUnderline                                                                           cterm=bold,underline gui=bold,underline
-   hi ansiBoldBlack         ctermfg=black      guifg=black                                        cterm=bold         gui=bold
-   hi ansiBoldRed           ctermfg=red        guifg=red                                          cterm=bold         gui=bold
-   hi ansiBoldGreen         ctermfg=green      guifg=green                                        cterm=bold         gui=bold
-   hi ansiBoldYellow        ctermfg=yellow     guifg=yellow                                       cterm=bold         gui=bold
-   hi ansiBoldBlue          ctermfg=blue       guifg=blue                                         cterm=bold         gui=bold
-   hi ansiBoldMagenta       ctermfg=magenta    guifg=magenta                                      cterm=bold         gui=bold
-   hi ansiBoldCyan          ctermfg=cyan       guifg=cyan                                         cterm=bold         gui=bold
-   hi ansiBoldWhite         ctermfg=white      guifg=white                                        cterm=bold         gui=bold
-   hi ansiBoldGray          ctermbg=gray       guibg=gray                                         cterm=bold         gui=bold
+   hi ansiBoldBlack         ctermfg=Black      guifg=Black                                        cterm=bold         gui=bold
+   hi ansiBoldRed           ctermfg=DarkRed        guifg=DarkRed                                          cterm=bold         gui=bold
+   hi ansiBoldGreen         ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=bold         gui=bold
+   hi ansiBoldYellow        ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=bold         gui=bold
+   hi ansiBoldBlue          ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=bold         gui=bold
+   hi ansiBoldMagenta       ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=bold         gui=bold
+   hi ansiBoldCyan          ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=bold         gui=bold
+   hi ansiBoldWhite         ctermfg=LightGray      guifg=LightGray                                        cterm=bold         gui=bold
+   hi ansiBoldGray          ctermbg=DarkGray       guibg=DarkGray                                         cterm=bold         gui=bold
 
-   hi ansiBlackBold         ctermbg=black      guibg=black                                        cterm=bold         gui=bold
-   hi ansiRedBold           ctermbg=red        guibg=red                                          cterm=bold         gui=bold
-   hi ansiGreenBold         ctermbg=green      guibg=green                                        cterm=bold         gui=bold
-   hi ansiYellowBold        ctermbg=yellow     guibg=yellow                                       cterm=bold         gui=bold
-   hi ansiBlueBold          ctermbg=blue       guibg=blue                                         cterm=bold         gui=bold
-   hi ansiMagentaBold       ctermbg=magenta    guibg=magenta                                      cterm=bold         gui=bold
-   hi ansiCyanBold          ctermbg=cyan       guibg=cyan                                         cterm=bold         gui=bold
-   hi ansiWhiteBold         ctermbg=white      guibg=white                                        cterm=bold         gui=bold
+   hi ansiBlackBold         ctermbg=Black      guibg=Black                                        cterm=bold         gui=bold
+   hi ansiRedBold           ctermbg=DarkRed        guibg=DarkRed                                          cterm=bold         gui=bold
+   hi ansiGreenBold         ctermbg=DarkGreen      guibg=DarkGreen                                        cterm=bold         gui=bold
+   hi ansiYellowBold        ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=bold         gui=bold
+   hi ansiBlueBold          ctermbg=DarkBlue       guibg=DarkBlue                                         cterm=bold         gui=bold
+   hi ansiMagentaBold       ctermbg=DarkMagenta    guibg=DarkMagenta                                      cterm=bold         gui=bold
+   hi ansiCyanBold          ctermbg=DarkCyan       guibg=DarkCyan                                         cterm=bold         gui=bold
+   hi ansiWhiteBold         ctermbg=LightGray      guibg=LightGray                                        cterm=bold         gui=bold
 
    hi ansiReverse                                                                                 cterm=reverse      gui=reverse
    hi ansiReverseUnderline                                                                        cterm=reverse,underline gui=reverse,underline
    hi ansiReverseBold                                                                             cterm=reverse,bold gui=reverse,bold
    hi ansiReverseBoldUnderline                                                                    cterm=reverse,bold,underline gui=reverse,bold,underline
-   hi ansiReverseBlack      ctermfg=black      guifg=black                                        cterm=reverse         gui=reverse
-   hi ansiReverseRed        ctermfg=red        guifg=red                                          cterm=reverse         gui=reverse
-   hi ansiReverseGreen      ctermfg=green      guifg=green                                        cterm=reverse         gui=reverse
-   hi ansiReverseYellow     ctermfg=yellow     guifg=yellow                                       cterm=reverse         gui=reverse
-   hi ansiReverseBlue       ctermfg=blue       guifg=blue                                         cterm=reverse         gui=reverse
-   hi ansiReverseMagenta    ctermfg=magenta    guifg=magenta                                      cterm=reverse         gui=reverse
-   hi ansiReverseCyan       ctermfg=cyan       guifg=cyan                                         cterm=reverse         gui=reverse
-   hi ansiReverseWhite      ctermfg=white      guifg=white                                        cterm=reverse         gui=reverse
+   hi ansiReverseBlack      ctermfg=Black      guifg=Black                                        cterm=reverse         gui=reverse
+   hi ansiReverseRed        ctermfg=DarkRed        guifg=DarkRed                                          cterm=reverse         gui=reverse
+   hi ansiReverseGreen      ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=reverse         gui=reverse
+   hi ansiReverseYellow     ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=reverse         gui=reverse
+   hi ansiReverseBlue       ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=reverse         gui=reverse
+   hi ansiReverseMagenta    ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=reverse         gui=reverse
+   hi ansiReverseCyan       ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=reverse         gui=reverse
+   hi ansiReverseWhite      ctermfg=LightGray      guifg=LightGray                                        cterm=reverse         gui=reverse
 
    hi ansiStandout                                                                                cterm=standout     gui=standout
-   hi ansiStandoutBlack     ctermfg=black      guifg=black                                        cterm=standout     gui=standout
-   hi ansiStandoutRed       ctermfg=red        guifg=red                                          cterm=standout     gui=standout
-   hi ansiStandoutGreen     ctermfg=green      guifg=green                                        cterm=standout     gui=standout
-   hi ansiStandoutYellow    ctermfg=yellow     guifg=yellow                                       cterm=standout     gui=standout
-   hi ansiStandoutBlue      ctermfg=blue       guifg=blue                                         cterm=standout     gui=standout
-   hi ansiStandoutMagenta   ctermfg=magenta    guifg=magenta                                      cterm=standout     gui=standout
-   hi ansiStandoutCyan      ctermfg=cyan       guifg=cyan                                         cterm=standout     gui=standout
-   hi ansiStandoutWhite     ctermfg=white      guifg=white                                        cterm=standout     gui=standout
-   hi ansiStandoutGray      ctermfg=gray       guifg=gray                                         cterm=standout     gui=standout
+   hi ansiStandoutBlack     ctermfg=Black      guifg=Black                                        cterm=standout     gui=standout
+   hi ansiStandoutRed       ctermfg=DarkRed        guifg=DarkRed                                          cterm=standout     gui=standout
+   hi ansiStandoutGreen     ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=standout     gui=standout
+   hi ansiStandoutYellow    ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=standout
+   hi ansiStandoutBlue      ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=standout     gui=standout
+   hi ansiStandoutMagenta   ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=standout     gui=standout
+   hi ansiStandoutCyan      ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=standout     gui=standout
+   hi ansiStandoutWhite     ctermfg=LightGray      guifg=LightGray                                        cterm=standout     gui=standout
+   hi ansiStandoutGray      ctermfg=DarkGray       guifg=DarkGray                                         cterm=standout     gui=standout
 
    hi ansiItalic                                                                                  cterm=italic       gui=italic
-   hi ansiItalicBlack       ctermfg=black      guifg=black                                        cterm=italic       gui=italic
-   hi ansiItalicRed         ctermfg=red        guifg=red                                          cterm=italic       gui=italic
-   hi ansiItalicGreen       ctermfg=green      guifg=green                                        cterm=italic       gui=italic
-   hi ansiItalicYellow      ctermfg=yellow     guifg=yellow                                       cterm=italic       gui=italic
-   hi ansiItalicBlue        ctermfg=blue       guifg=blue                                         cterm=italic       gui=italic
-   hi ansiItalicMagenta     ctermfg=magenta    guifg=magenta                                      cterm=italic       gui=italic
-   hi ansiItalicCyan        ctermfg=cyan       guifg=cyan                                         cterm=italic       gui=italic
-   hi ansiItalicWhite       ctermfg=white      guifg=white                                        cterm=italic       gui=italic
-   hi ansiItalicGray        ctermfg=gray       guifg=gray                                         cterm=italic       gui=italic
+   hi ansiItalicBlack       ctermfg=Black      guifg=Black                                        cterm=italic       gui=italic
+   hi ansiItalicRed         ctermfg=DarkRed        guifg=DarkRed                                          cterm=italic       gui=italic
+   hi ansiItalicGreen       ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=italic       gui=italic
+   hi ansiItalicYellow      ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=italic       gui=italic
+   hi ansiItalicBlue        ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=italic       gui=italic
+   hi ansiItalicMagenta     ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=italic       gui=italic
+   hi ansiItalicCyan        ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=italic       gui=italic
+   hi ansiItalicWhite       ctermfg=LightGray      guifg=LightGray                                        cterm=italic       gui=italic
+   hi ansiItalicGray        ctermfg=DarkGray       guifg=DarkGray                                         cterm=italic       gui=italic
 
    hi ansiUnderline                                                                               cterm=underline    gui=underline
-   hi ansiUnderlineBlack    ctermfg=black      guifg=black                                        cterm=underline    gui=underline
-   hi ansiUnderlineRed      ctermfg=red        guifg=red                                          cterm=underline    gui=underline
-   hi ansiUnderlineGreen    ctermfg=green      guifg=green                                        cterm=underline    gui=underline
-   hi ansiUnderlineYellow   ctermfg=yellow     guifg=yellow                                       cterm=underline    gui=underline
-   hi ansiUnderlineBlue     ctermfg=blue       guifg=blue                                         cterm=underline    gui=underline
-   hi ansiUnderlineMagenta  ctermfg=magenta    guifg=magenta                                      cterm=underline    gui=underline
-   hi ansiUnderlineCyan     ctermfg=cyan       guifg=cyan                                         cterm=underline    gui=underline
-   hi ansiUnderlineWhite    ctermfg=white      guifg=white                                        cterm=underline    gui=underline
-   hi ansiUnderlineGray     ctermfg=gray       guifg=gray                                         cterm=underline    gui=underline
+   hi ansiUnderlineBlack    ctermfg=Black      guifg=Black                                        cterm=underline    gui=underline
+   hi ansiUnderlineRed      ctermfg=DarkRed        guifg=DarkRed                                          cterm=underline    gui=underline
+   hi ansiUnderlineGreen    ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=underline    gui=underline
+   hi ansiUnderlineYellow   ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=underline    gui=underline
+   hi ansiUnderlineBlue     ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=underline    gui=underline
+   hi ansiUnderlineMagenta  ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=underline    gui=underline
+   hi ansiUnderlineCyan     ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=underline    gui=underline
+   hi ansiUnderlineWhite    ctermfg=LightGray      guifg=LightGray                                        cterm=underline    gui=underline
+   hi ansiUnderlineGray     ctermfg=DarkGray       guifg=DarkGray                                         cterm=underline    gui=underline
 
-   hi ansiBlackUnderline    ctermbg=black      guibg=black                                        cterm=underline    gui=underline
-   hi ansiRedUnderline      ctermbg=red        guibg=red                                          cterm=underline    gui=underline
-   hi ansiGreenUnderline    ctermbg=green      guibg=green                                        cterm=underline    gui=underline
-   hi ansiYellowUnderline   ctermbg=yellow     guibg=yellow                                       cterm=underline    gui=underline
-   hi ansiBlueUnderline     ctermbg=blue       guibg=blue                                         cterm=underline    gui=underline
-   hi ansiMagentaUnderline  ctermbg=magenta    guibg=magenta                                      cterm=underline    gui=underline
-   hi ansiCyanUnderline     ctermbg=cyan       guibg=cyan                                         cterm=underline    gui=underline
-   hi ansiWhiteUnderline    ctermbg=white      guibg=white                                        cterm=underline    gui=underline
+   hi ansiBlackUnderline    ctermbg=Black      guibg=Black                                        cterm=underline    gui=underline
+   hi ansiRedUnderline      ctermbg=DarkRed        guibg=DarkRed                                          cterm=underline    gui=underline
+   hi ansiGreenUnderline    ctermbg=DarkGreen      guibg=DarkGreen                                        cterm=underline    gui=underline
+   hi ansiYellowUnderline   ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=underline    gui=underline
+   hi ansiBlueUnderline     ctermbg=DarkBlue       guibg=DarkBlue                                         cterm=underline    gui=underline
+   hi ansiMagentaUnderline  ctermbg=DarkMagenta    guibg=DarkMagenta                                      cterm=underline    gui=underline
+   hi ansiCyanUnderline     ctermbg=DarkCyan       guibg=DarkCyan                                         cterm=underline    gui=underline
+   hi ansiWhiteUnderline    ctermbg=LightGray      guibg=LightGray                                        cterm=underline    gui=underline
 
    hi ansiBlink                                                                                   cterm=standout     gui=undercurl
-   hi ansiBlinkBlack        ctermfg=black      guifg=black                                        cterm=standout     gui=undercurl
-   hi ansiBlinkRed          ctermfg=red        guifg=red                                          cterm=standout     gui=undercurl
-   hi ansiBlinkGreen        ctermfg=green      guifg=green                                        cterm=standout     gui=undercurl
-   hi ansiBlinkYellow       ctermfg=yellow     guifg=yellow                                       cterm=standout     gui=undercurl
-   hi ansiBlinkBlue         ctermfg=blue       guifg=blue                                         cterm=standout     gui=undercurl
-   hi ansiBlinkMagenta      ctermfg=magenta    guifg=magenta                                      cterm=standout     gui=undercurl
-   hi ansiBlinkCyan         ctermfg=cyan       guifg=cyan                                         cterm=standout     gui=undercurl
-   hi ansiBlinkWhite        ctermfg=white      guifg=white                                        cterm=standout     gui=undercurl
-   hi ansiBlinkGray         ctermfg=gray       guifg=gray                                         cterm=standout     gui=undercurl
+   hi ansiBlinkBlack        ctermfg=Black      guifg=Black                                        cterm=standout     gui=undercurl
+   hi ansiBlinkRed          ctermfg=DarkRed        guifg=DarkRed                                          cterm=standout     gui=undercurl
+   hi ansiBlinkGreen        ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=standout     gui=undercurl
+   hi ansiBlinkYellow       ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=undercurl
+   hi ansiBlinkBlue         ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=standout     gui=undercurl
+   hi ansiBlinkMagenta      ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=standout     gui=undercurl
+   hi ansiBlinkCyan         ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=standout     gui=undercurl
+   hi ansiBlinkWhite        ctermfg=LightGray      guifg=LightGray                                        cterm=standout     gui=undercurl
+   hi ansiBlinkGray         ctermfg=DarkGray       guifg=DarkGray                                         cterm=standout     gui=undercurl
 
    hi ansiRapidBlink                                                                              cterm=standout     gui=undercurl
-   hi ansiRapidBlinkBlack   ctermfg=black      guifg=black                                        cterm=standout     gui=undercurl
-   hi ansiRapidBlinkRed     ctermfg=red        guifg=red                                          cterm=standout     gui=undercurl
-   hi ansiRapidBlinkGreen   ctermfg=green      guifg=green                                        cterm=standout     gui=undercurl
-   hi ansiRapidBlinkYellow  ctermfg=yellow     guifg=yellow                                       cterm=standout     gui=undercurl
-   hi ansiRapidBlinkBlue    ctermfg=blue       guifg=blue                                         cterm=standout     gui=undercurl
-   hi ansiRapidBlinkMagenta ctermfg=magenta    guifg=magenta                                      cterm=standout     gui=undercurl
-   hi ansiRapidBlinkCyan    ctermfg=cyan       guifg=cyan                                         cterm=standout     gui=undercurl
-   hi ansiRapidBlinkWhite   ctermfg=white      guifg=white                                        cterm=standout     gui=undercurl
-   hi ansiRapidBlinkGray    ctermfg=gray       guifg=gray                                         cterm=standout     gui=undercurl
+   hi ansiRapidBlinkBlack   ctermfg=Black      guifg=Black                                        cterm=standout     gui=undercurl
+   hi ansiRapidBlinkRed     ctermfg=DarkRed        guifg=DarkRed                                          cterm=standout     gui=undercurl
+   hi ansiRapidBlinkGreen   ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=standout     gui=undercurl
+   hi ansiRapidBlinkYellow  ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=undercurl
+   hi ansiRapidBlinkBlue    ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=standout     gui=undercurl
+   hi ansiRapidBlinkMagenta ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=standout     gui=undercurl
+   hi ansiRapidBlinkCyan    ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=standout     gui=undercurl
+   hi ansiRapidBlinkWhite   ctermfg=LightGray      guifg=LightGray                                        cterm=standout     gui=undercurl
+   hi ansiRapidBlinkGray    ctermfg=DarkGray       guifg=DarkGray                                         cterm=standout     gui=undercurl
 
    hi ansiRV                                                                                      cterm=reverse      gui=reverse
-   hi ansiRVBlack           ctermfg=black      guifg=black                                        cterm=reverse      gui=reverse
-   hi ansiRVRed             ctermfg=red        guifg=red                                          cterm=reverse      gui=reverse
-   hi ansiRVGreen           ctermfg=green      guifg=green                                        cterm=reverse      gui=reverse
-   hi ansiRVYellow          ctermfg=yellow     guifg=yellow                                       cterm=reverse      gui=reverse
-   hi ansiRVBlue            ctermfg=blue       guifg=blue                                         cterm=reverse      gui=reverse
-   hi ansiRVMagenta         ctermfg=magenta    guifg=magenta                                      cterm=reverse      gui=reverse
-   hi ansiRVCyan            ctermfg=cyan       guifg=cyan                                         cterm=reverse      gui=reverse
-   hi ansiRVWhite           ctermfg=white      guifg=white                                        cterm=reverse      gui=reverse
-   hi ansiRVGray            ctermfg=gray       guifg=gray                                         cterm=reverse      gui=reverse
+   hi ansiRVBlack           ctermfg=Black      guifg=Black                                        cterm=reverse      gui=reverse
+   hi ansiRVRed             ctermfg=DarkRed        guifg=DarkRed                                          cterm=reverse      gui=reverse
+   hi ansiRVGreen           ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=reverse      gui=reverse
+   hi ansiRVYellow          ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=reverse      gui=reverse
+   hi ansiRVBlue            ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=reverse      gui=reverse
+   hi ansiRVMagenta         ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=reverse      gui=reverse
+   hi ansiRVCyan            ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=reverse      gui=reverse
+   hi ansiRVWhite           ctermfg=LightGray      guifg=LightGray                                        cterm=reverse      gui=reverse
+   hi ansiRVGray            ctermfg=DarkGray       guifg=DarkGray                                         cterm=reverse      gui=reverse
 
-   hi ansiBoldDefault         ctermfg=none           ctermbg=none      guifg=none           guibg=none    cterm=bold         gui=bold
-   hi ansiUnderlineDefault    ctermfg=none           ctermbg=none      guifg=none           guibg=none    cterm=underline    gui=underline
-   hi ansiBlackDefault        ctermfg=black          ctermbg=none      guifg=Black          guibg=none    cterm=none         gui=none
-   hi ansiRedDefault          ctermfg=red        ctermbg=none      guifg=red        guibg=none    cterm=none         gui=none
-   hi ansiGreenDefault        ctermfg=green      ctermbg=none      guifg=green      guibg=none    cterm=none         gui=none
-   hi ansiYellowDefault       ctermfg=yellow     ctermbg=none      guifg=yellow     guibg=none    cterm=none         gui=none
-   hi ansiBlueDefault         ctermfg=blue       ctermbg=none      guifg=blue       guibg=none    cterm=none         gui=none
-   hi ansiMagentaDefault      ctermfg=magenta    ctermbg=none      guifg=magenta    guibg=none    cterm=none         gui=none
-   hi ansiCyanDefault         ctermfg=cyan       ctermbg=none      guifg=cyan       guibg=none    cterm=none         gui=none
-   hi ansiWhiteDefault        ctermfg=white      ctermbg=none      guifg=white      guibg=none    cterm=none         gui=none
+   hi ansiBoldDefault         ctermfg=NONE           ctermbg=NONE      guifg=NONE           guibg=NONE    cterm=bold         gui=bold
+   hi ansiUnderlineDefault    ctermfg=NONE           ctermbg=NONE      guifg=NONE           guibg=NONE    cterm=underline    gui=underline
+   hi ansiBlackDefault        ctermfg=Black          ctermbg=NONE      guifg=Black          guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiRedDefault          ctermfg=DarkRed        ctermbg=NONE      guifg=DarkRed        guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiGreenDefault        ctermfg=DarkGreen      ctermbg=NONE      guifg=DarkGreen      guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiYellowDefault       ctermfg=DarkYellow     ctermbg=NONE      guifg=DarkYellow     guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiBlueDefault         ctermfg=DarkBlue       ctermbg=NONE      guifg=DarkBlue       guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiMagentaDefault      ctermfg=DarkMagenta    ctermbg=NONE      guifg=DarkMagenta    guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiCyanDefault         ctermfg=DarkCyan       ctermbg=NONE      guifg=DarkCyan       guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiWhiteDefault        ctermfg=LightGray      ctermbg=NONE      guifg=LightGray      guibg=NONE    cterm=NONE         gui=NONE
 
-   hi ansiDefaultDefault      ctermfg=none      ctermbg=none       guifg=none       guibg=none    cterm=none         gui=none
-   hi ansiDefaultBlack        ctermfg=none      ctermbg=black      guifg=none       guibg=Black   cterm=none         gui=none
-   hi ansiDefaultRed          ctermfg=none        ctermbg=red      guifg=none        guibg=red    cterm=none         gui=none
-   hi ansiDefaultGreen        ctermfg=none      ctermbg=green      guifg=none      guibg=green    cterm=none         gui=none
-   hi ansiDefaultYellow       ctermfg=none     ctermbg=yellow      guifg=none     guibg=yellow    cterm=none         gui=none
-   hi ansiDefaultBlue         ctermfg=none       ctermbg=blue      guifg=none       guibg=blue    cterm=none         gui=none
-   hi ansiDefaultMagenta      ctermfg=none    ctermbg=magenta      guifg=none    guibg=magenta    cterm=none         gui=none
-   hi ansiDefaultCyan         ctermfg=none       ctermbg=cyan      guifg=none       guibg=cyan    cterm=none         gui=none
-   hi ansiDefaultWhite        ctermfg=none      ctermbg=white      guifg=none      guibg=white    cterm=none         gui=none
+   hi ansiDefaultDefault      ctermfg=NONE      ctermbg=NONE       guifg=NONE       guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiDefaultBlack        ctermfg=NONE      ctermbg=Black      guifg=NONE       guibg=Black   cterm=NONE         gui=NONE
+   hi ansiDefaultRed          ctermfg=NONE        ctermbg=DarkRed      guifg=NONE        guibg=DarkRed    cterm=NONE         gui=NONE
+   hi ansiDefaultGreen        ctermfg=NONE      ctermbg=DarkGreen      guifg=NONE      guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiDefaultYellow       ctermfg=NONE     ctermbg=DarkYellow      guifg=NONE     guibg=DarkYellow    cterm=NONE         gui=NONE
+   hi ansiDefaultBlue         ctermfg=NONE       ctermbg=DarkBlue      guifg=NONE       guibg=DarkBlue    cterm=NONE         gui=NONE
+   hi ansiDefaultMagenta      ctermfg=NONE    ctermbg=DarkMagenta      guifg=NONE    guibg=DarkMagenta    cterm=NONE         gui=NONE
+   hi ansiDefaultCyan         ctermfg=NONE       ctermbg=DarkCyan      guifg=NONE       guibg=DarkCyan    cterm=NONE         gui=NONE
+   hi ansiDefaultWhite        ctermfg=NONE      ctermbg=LightGray      guifg=NONE      guibg=LightGray    cterm=NONE         gui=NONE
 
-   hi ansiBlackBlack        ctermfg=black      ctermbg=black      guifg=Black      guibg=Black    cterm=none         gui=none
-   hi ansiRedBlack          ctermfg=red        ctermbg=black      guifg=Red        guibg=Black    cterm=none         gui=none
-   hi ansiGreenBlack        ctermfg=green      ctermbg=black      guifg=Green      guibg=Black    cterm=none         gui=none
-   hi ansiYellowBlack       ctermfg=yellow     ctermbg=black      guifg=Yellow     guibg=Black    cterm=none         gui=none
-   hi ansiBlueBlack         ctermfg=blue       ctermbg=black      guifg=Blue       guibg=Black    cterm=none         gui=none
-   hi ansiMagentaBlack      ctermfg=magenta    ctermbg=black      guifg=Magenta    guibg=Black    cterm=none         gui=none
-   hi ansiCyanBlack         ctermfg=cyan       ctermbg=black      guifg=Cyan       guibg=Black    cterm=none         gui=none
-   hi ansiWhiteBlack        ctermfg=white      ctermbg=black      guifg=White      guibg=Black    cterm=none         gui=none
-   hi ansiGrayBlack         ctermfg=gray       ctermbg=black      guifg=Gray       guibg=Black    cterm=none         gui=none
+   hi ansiBlackBlack        ctermfg=Black      ctermbg=Black      guifg=Black      guibg=Black    cterm=NONE         gui=NONE
+   hi ansiRedBlack          ctermfg=DarkRed        ctermbg=Black      guifg=DarkRed        guibg=Black    cterm=NONE         gui=NONE
+   hi ansiGreenBlack        ctermfg=DarkGreen      ctermbg=Black      guifg=DarkGreen      guibg=Black    cterm=NONE         gui=NONE
+   hi ansiYellowBlack       ctermfg=DarkYellow     ctermbg=Black      guifg=DarkYellow     guibg=Black    cterm=NONE         gui=NONE
+   hi ansiBlueBlack         ctermfg=DarkBlue       ctermbg=Black      guifg=DarkBlue       guibg=Black    cterm=NONE         gui=NONE
+   hi ansiMagentaBlack      ctermfg=DarkMagenta    ctermbg=Black      guifg=DarkMagenta    guibg=Black    cterm=NONE         gui=NONE
+   hi ansiCyanBlack         ctermfg=DarkCyan       ctermbg=Black      guifg=DarkCyan       guibg=Black    cterm=NONE         gui=NONE
+   hi ansiWhiteBlack        ctermfg=LightGray      ctermbg=Black      guifg=LightGray      guibg=Black    cterm=NONE         gui=NONE
+   hi ansiGrayBlack         ctermfg=DarkGray       ctermbg=Black      guifg=DarkGray       guibg=Black    cterm=NONE         gui=NONE
 
-   hi ansiBlackRed          ctermfg=black      ctermbg=red        guifg=Black      guibg=Red      cterm=none         gui=none
-   hi ansiRedRed            ctermfg=red        ctermbg=red        guifg=Red        guibg=Red      cterm=none         gui=none
-   hi ansiGreenRed          ctermfg=green      ctermbg=red        guifg=Green      guibg=Red      cterm=none         gui=none
-   hi ansiYellowRed         ctermfg=yellow     ctermbg=red        guifg=Yellow     guibg=Red      cterm=none         gui=none
-   hi ansiBlueRed           ctermfg=blue       ctermbg=red        guifg=Blue       guibg=Red      cterm=none         gui=none
-   hi ansiMagentaRed        ctermfg=magenta    ctermbg=red        guifg=Magenta    guibg=Red      cterm=none         gui=none
-   hi ansiCyanRed           ctermfg=cyan       ctermbg=red        guifg=Cyan       guibg=Red      cterm=none         gui=none
-   hi ansiWhiteRed          ctermfg=white      ctermbg=red        guifg=White      guibg=Red      cterm=none         gui=none
-   hi ansiGrayRed           ctermfg=gray       ctermbg=red        guifg=Gray       guibg=Red      cterm=none         gui=none
+   hi ansiBlackRed          ctermfg=Black      ctermbg=DarkRed        guifg=Black      guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiRedRed            ctermfg=DarkRed        ctermbg=DarkRed        guifg=DarkRed        guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiGreenRed          ctermfg=DarkGreen      ctermbg=DarkRed        guifg=DarkGreen      guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiYellowRed         ctermfg=DarkYellow     ctermbg=DarkRed        guifg=DarkYellow     guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiBlueRed           ctermfg=DarkBlue       ctermbg=DarkRed        guifg=DarkBlue       guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiMagentaRed        ctermfg=DarkMagenta    ctermbg=DarkRed        guifg=DarkMagenta    guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiCyanRed           ctermfg=DarkCyan       ctermbg=DarkRed        guifg=DarkCyan       guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiWhiteRed          ctermfg=LightGray      ctermbg=DarkRed        guifg=LightGray      guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiGrayRed           ctermfg=DarkGray       ctermbg=DarkRed        guifg=DarkGray       guibg=DarkRed      cterm=NONE         gui=NONE
 
-   hi ansiBlackGreen        ctermfg=black      ctermbg=green      guifg=Black      guibg=Green    cterm=none         gui=none
-   hi ansiRedGreen          ctermfg=red        ctermbg=green      guifg=Red        guibg=Green    cterm=none         gui=none
-   hi ansiGreenGreen        ctermfg=green      ctermbg=green      guifg=Green      guibg=Green    cterm=none         gui=none
-   hi ansiYellowGreen       ctermfg=yellow     ctermbg=green      guifg=Yellow     guibg=Green    cterm=none         gui=none
-   hi ansiBlueGreen         ctermfg=blue       ctermbg=green      guifg=Blue       guibg=Green    cterm=none         gui=none
-   hi ansiMagentaGreen      ctermfg=magenta    ctermbg=green      guifg=Magenta    guibg=Green    cterm=none         gui=none
-   hi ansiCyanGreen         ctermfg=cyan       ctermbg=green      guifg=Cyan       guibg=Green    cterm=none         gui=none
-   hi ansiWhiteGreen        ctermfg=white      ctermbg=green      guifg=White      guibg=Green    cterm=none         gui=none
-   hi ansiGrayGreen         ctermfg=gray       ctermbg=green      guifg=Gray       guibg=Green    cterm=none         gui=none
+   hi ansiBlackGreen        ctermfg=Black      ctermbg=DarkGreen      guifg=Black      guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiRedGreen          ctermfg=DarkRed        ctermbg=DarkGreen      guifg=DarkRed        guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiGreenGreen        ctermfg=DarkGreen      ctermbg=DarkGreen      guifg=DarkGreen      guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiYellowGreen       ctermfg=DarkYellow     ctermbg=DarkGreen      guifg=DarkYellow     guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiBlueGreen         ctermfg=DarkBlue       ctermbg=DarkGreen      guifg=DarkBlue       guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiMagentaGreen      ctermfg=DarkMagenta    ctermbg=DarkGreen      guifg=DarkMagenta    guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiCyanGreen         ctermfg=DarkCyan       ctermbg=DarkGreen      guifg=DarkCyan       guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiWhiteGreen        ctermfg=LightGray      ctermbg=DarkGreen      guifg=LightGray      guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiGrayGreen         ctermfg=DarkGray       ctermbg=DarkGreen      guifg=DarkGray       guibg=DarkGreen    cterm=NONE         gui=NONE
 
-   hi ansiBlackYellow       ctermfg=black      ctermbg=yellow     guifg=Black      guibg=Yellow   cterm=none         gui=none
-   hi ansiRedYellow         ctermfg=red        ctermbg=yellow     guifg=Red        guibg=Yellow   cterm=none         gui=none
-   hi ansiGreenYellow       ctermfg=green      ctermbg=yellow     guifg=Green      guibg=Yellow   cterm=none         gui=none
-   hi ansiYellowYellow      ctermfg=yellow     ctermbg=yellow     guifg=Yellow     guibg=Yellow   cterm=none         gui=none
-   hi ansiBlueYellow        ctermfg=blue       ctermbg=yellow     guifg=Blue       guibg=Yellow   cterm=none         gui=none
-   hi ansiMagentaYellow     ctermfg=magenta    ctermbg=yellow     guifg=Magenta    guibg=Yellow   cterm=none         gui=none
-   hi ansiCyanYellow        ctermfg=cyan       ctermbg=yellow     guifg=Cyan       guibg=Yellow   cterm=none         gui=none
-   hi ansiWhiteYellow       ctermfg=white      ctermbg=yellow     guifg=White      guibg=Yellow   cterm=none         gui=none
-   hi ansiGrayYellow        ctermfg=gray       ctermbg=yellow     guifg=Gray       guibg=Yellow   cterm=none         gui=none
+   hi ansiBlackYellow       ctermfg=Black      ctermbg=DarkYellow     guifg=Black      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiRedYellow         ctermfg=DarkRed        ctermbg=DarkYellow     guifg=DarkRed        guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiGreenYellow       ctermfg=DarkGreen      ctermbg=DarkYellow     guifg=DarkGreen      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiYellowYellow      ctermfg=DarkYellow     ctermbg=DarkYellow     guifg=DarkYellow     guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiBlueYellow        ctermfg=DarkBlue       ctermbg=DarkYellow     guifg=DarkBlue       guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiMagentaYellow     ctermfg=DarkMagenta    ctermbg=DarkYellow     guifg=DarkMagenta    guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiCyanYellow        ctermfg=DarkCyan       ctermbg=DarkYellow     guifg=DarkCyan       guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiWhiteYellow       ctermfg=LightGray      ctermbg=DarkYellow     guifg=LightGray      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiGrayYellow        ctermfg=DarkGray       ctermbg=DarkYellow     guifg=DarkGray       guibg=DarkYellow   cterm=NONE         gui=NONE
 
-   hi ansiBlackBlue         ctermfg=black      ctermbg=blue       guifg=Black      guibg=Blue     cterm=none         gui=none
-   hi ansiRedBlue           ctermfg=red        ctermbg=blue       guifg=Red        guibg=Blue     cterm=none         gui=none
-   hi ansiGreenBlue         ctermfg=green      ctermbg=blue       guifg=Green      guibg=Blue     cterm=none         gui=none
-   hi ansiYellowBlue        ctermfg=yellow     ctermbg=blue       guifg=Yellow     guibg=Blue     cterm=none         gui=none
-   hi ansiBlueBlue          ctermfg=blue       ctermbg=blue       guifg=Blue       guibg=Blue     cterm=none         gui=none
-   hi ansiMagentaBlue       ctermfg=magenta    ctermbg=blue       guifg=Magenta    guibg=Blue     cterm=none         gui=none
-   hi ansiCyanBlue          ctermfg=cyan       ctermbg=blue       guifg=Cyan       guibg=Blue     cterm=none         gui=none
-   hi ansiWhiteBlue         ctermfg=white      ctermbg=blue       guifg=White      guibg=Blue     cterm=none         gui=none
-   hi ansiGrayBlue          ctermfg=gray       ctermbg=blue       guifg=Gray       guibg=Blue     cterm=none         gui=none
+   hi ansiBlackBlue         ctermfg=Black      ctermbg=DarkBlue       guifg=Black      guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiRedBlue           ctermfg=DarkRed        ctermbg=DarkBlue       guifg=DarkRed        guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiGreenBlue         ctermfg=DarkGreen      ctermbg=DarkBlue       guifg=DarkGreen      guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiYellowBlue        ctermfg=DarkYellow     ctermbg=DarkBlue       guifg=DarkYellow     guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiBlueBlue          ctermfg=DarkBlue       ctermbg=DarkBlue       guifg=DarkBlue       guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiMagentaBlue       ctermfg=DarkMagenta    ctermbg=DarkBlue       guifg=DarkMagenta    guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiCyanBlue          ctermfg=DarkCyan       ctermbg=DarkBlue       guifg=DarkCyan       guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiWhiteBlue         ctermfg=LightGray      ctermbg=DarkBlue       guifg=LightGray      guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiGrayBlue          ctermfg=DarkGray       ctermbg=DarkBlue       guifg=DarkGray       guibg=DarkBlue     cterm=NONE         gui=NONE
 
-   hi ansiBlackMagenta      ctermfg=black      ctermbg=magenta    guifg=Black      guibg=Magenta  cterm=none         gui=none
-   hi ansiRedMagenta        ctermfg=red        ctermbg=magenta    guifg=Red        guibg=Magenta  cterm=none         gui=none
-   hi ansiGreenMagenta      ctermfg=green      ctermbg=magenta    guifg=Green      guibg=Magenta  cterm=none         gui=none
-   hi ansiYellowMagenta     ctermfg=yellow     ctermbg=magenta    guifg=Yellow     guibg=Magenta  cterm=none         gui=none
-   hi ansiBlueMagenta       ctermfg=blue       ctermbg=magenta    guifg=Blue       guibg=Magenta  cterm=none         gui=none
-   hi ansiMagentaMagenta    ctermfg=magenta    ctermbg=magenta    guifg=Magenta    guibg=Magenta  cterm=none         gui=none
-   hi ansiCyanMagenta       ctermfg=cyan       ctermbg=magenta    guifg=Cyan       guibg=Magenta  cterm=none         gui=none
-   hi ansiWhiteMagenta      ctermfg=white      ctermbg=magenta    guifg=White      guibg=Magenta  cterm=none         gui=none
-   hi ansiGrayMagenta       ctermfg=gray       ctermbg=magenta    guifg=Gray       guibg=Magenta  cterm=none         gui=none
+   hi ansiBlackMagenta      ctermfg=Black      ctermbg=DarkMagenta    guifg=Black      guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiRedMagenta        ctermfg=DarkRed        ctermbg=DarkMagenta    guifg=DarkRed        guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiGreenMagenta      ctermfg=DarkGreen      ctermbg=DarkMagenta    guifg=DarkGreen      guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiYellowMagenta     ctermfg=DarkYellow     ctermbg=DarkMagenta    guifg=DarkYellow     guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiBlueMagenta       ctermfg=DarkBlue       ctermbg=DarkMagenta    guifg=DarkBlue       guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiMagentaMagenta    ctermfg=DarkMagenta    ctermbg=DarkMagenta    guifg=DarkMagenta    guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiCyanMagenta       ctermfg=DarkCyan       ctermbg=DarkMagenta    guifg=DarkCyan       guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiWhiteMagenta      ctermfg=LightGray      ctermbg=DarkMagenta    guifg=LightGray      guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiGrayMagenta       ctermfg=DarkGray       ctermbg=DarkMagenta    guifg=DarkGray       guibg=DarkMagenta  cterm=NONE         gui=NONE
 
-   hi ansiBlackCyan         ctermfg=black      ctermbg=cyan       guifg=Black      guibg=Cyan     cterm=none         gui=none
-   hi ansiRedCyan           ctermfg=red        ctermbg=cyan       guifg=Red        guibg=Cyan     cterm=none         gui=none
-   hi ansiGreenCyan         ctermfg=green      ctermbg=cyan       guifg=Green      guibg=Cyan     cterm=none         gui=none
-   hi ansiYellowCyan        ctermfg=yellow     ctermbg=cyan       guifg=Yellow     guibg=Cyan     cterm=none         gui=none
-   hi ansiBlueCyan          ctermfg=blue       ctermbg=cyan       guifg=Blue       guibg=Cyan     cterm=none         gui=none
-   hi ansiMagentaCyan       ctermfg=magenta    ctermbg=cyan       guifg=Magenta    guibg=Cyan     cterm=none         gui=none
-   hi ansiCyanCyan          ctermfg=cyan       ctermbg=cyan       guifg=Cyan       guibg=Cyan     cterm=none         gui=none
-   hi ansiWhiteCyan         ctermfg=white      ctermbg=cyan       guifg=White      guibg=Cyan     cterm=none         gui=none
-   hi ansiGrayCyan          ctermfg=gray       ctermbg=cyan       guifg=Gray       guibg=Cyan     cterm=none         gui=none
+   hi ansiBlackCyan         ctermfg=Black      ctermbg=DarkCyan       guifg=Black      guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiRedCyan           ctermfg=DarkRed        ctermbg=DarkCyan       guifg=DarkRed        guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiGreenCyan         ctermfg=DarkGreen      ctermbg=DarkCyan       guifg=DarkGreen      guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiYellowCyan        ctermfg=DarkYellow     ctermbg=DarkCyan       guifg=DarkYellow     guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiBlueCyan          ctermfg=DarkBlue       ctermbg=DarkCyan       guifg=DarkBlue       guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiMagentaCyan       ctermfg=DarkMagenta    ctermbg=DarkCyan       guifg=DarkMagenta    guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiCyanCyan          ctermfg=DarkCyan       ctermbg=DarkCyan       guifg=DarkCyan       guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiWhiteCyan         ctermfg=LightGray      ctermbg=DarkCyan       guifg=LightGray      guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiGrayCyan          ctermfg=DarkGray       ctermbg=DarkCyan       guifg=DarkGray       guibg=DarkCyan     cterm=NONE         gui=NONE
 
-   hi ansiBlackWhite        ctermfg=black      ctermbg=white      guifg=Black      guibg=White    cterm=none         gui=none
-   hi ansiRedWhite          ctermfg=red        ctermbg=white      guifg=Red        guibg=White    cterm=none         gui=none
-   hi ansiGreenWhite        ctermfg=green      ctermbg=white      guifg=Green      guibg=White    cterm=none         gui=none
-   hi ansiYellowWhite       ctermfg=yellow     ctermbg=white      guifg=Yellow     guibg=White    cterm=none         gui=none
-   hi ansiBlueWhite         ctermfg=blue       ctermbg=white      guifg=Blue       guibg=White    cterm=none         gui=none
-   hi ansiMagentaWhite      ctermfg=magenta    ctermbg=white      guifg=Magenta    guibg=White    cterm=none         gui=none
-   hi ansiCyanWhite         ctermfg=cyan       ctermbg=white      guifg=Cyan       guibg=White    cterm=none         gui=none
-   hi ansiWhiteWhite        ctermfg=white      ctermbg=white      guifg=White      guibg=White    cterm=none         gui=none
-   hi ansiGrayWhite         ctermfg=gray       ctermbg=white      guifg=gray       guibg=White    cterm=none         gui=none
+   hi ansiBlackWhite        ctermfg=Black      ctermbg=LightGray      guifg=Black      guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiRedWhite          ctermfg=DarkRed        ctermbg=LightGray      guifg=DarkRed        guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiGreenWhite        ctermfg=DarkGreen      ctermbg=LightGray      guifg=DarkGreen      guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiYellowWhite       ctermfg=DarkYellow     ctermbg=LightGray      guifg=DarkYellow     guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiBlueWhite         ctermfg=DarkBlue       ctermbg=LightGray      guifg=DarkBlue       guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiMagentaWhite      ctermfg=DarkMagenta    ctermbg=LightGray      guifg=DarkMagenta    guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiCyanWhite         ctermfg=DarkCyan       ctermbg=LightGray      guifg=DarkCyan       guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiWhiteWhite        ctermfg=LightGray      ctermbg=LightGray      guifg=LightGray      guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiGrayWhite         ctermfg=DarkGray       ctermbg=LightGray      guifg=DarkGray       guibg=LightGray    cterm=NONE         gui=NONE
 
-   hi ansiBlackGray         ctermfg=black      ctermbg=gray       guifg=Black      guibg=gray     cterm=none         gui=none
-   hi ansiRedGray           ctermfg=red        ctermbg=gray       guifg=Red        guibg=gray     cterm=none         gui=none
-   hi ansiGreenGray         ctermfg=green      ctermbg=gray       guifg=Green      guibg=gray     cterm=none         gui=none
-   hi ansiYellowGray        ctermfg=yellow     ctermbg=gray       guifg=Yellow     guibg=gray     cterm=none         gui=none
-   hi ansiBlueGray          ctermfg=blue       ctermbg=gray       guifg=Blue       guibg=gray     cterm=none         gui=none
-   hi ansiMagentaGray       ctermfg=magenta    ctermbg=gray       guifg=Magenta    guibg=gray     cterm=none         gui=none
-   hi ansiCyanGray          ctermfg=cyan       ctermbg=gray       guifg=Cyan       guibg=gray     cterm=none         gui=none
-   hi ansiWhiteGray         ctermfg=white      ctermbg=gray       guifg=White      guibg=gray     cterm=none         gui=none
-   hi ansiGrayGray          ctermfg=gray       ctermbg=gray       guifg=Gray       guibg=gray     cterm=none         gui=none
+   hi ansiBlackGray         ctermfg=Black      ctermbg=DarkGray       guifg=Black      guibg=DarkGray     cterm=NONE         gui=NONE
+   hi ansiRedGray           ctermfg=DarkRed        ctermbg=DarkGray       guifg=DarkRed        guibg=DarkGray     cterm=NONE         gui=NONE
+   hi ansiGreenGray         ctermfg=DarkGreen      ctermbg=DarkGray       guifg=DarkGreen      guibg=DarkGray     cterm=NONE         gui=NONE
+   hi ansiYellowGray        ctermfg=DarkYellow     ctermbg=DarkGray       guifg=DarkYellow     guibg=DarkGray     cterm=NONE         gui=NONE
+   hi ansiBlueGray          ctermfg=DarkBlue       ctermbg=DarkGray       guifg=DarkBlue       guibg=DarkGray     cterm=NONE         gui=NONE
+   hi ansiMagentaGray       ctermfg=DarkMagenta    ctermbg=DarkGray       guifg=DarkMagenta    guibg=DarkGray     cterm=NONE         gui=NONE
+   hi ansiCyanGray          ctermfg=DarkCyan       ctermbg=DarkGray       guifg=DarkCyan       guibg=DarkGray     cterm=NONE         gui=NONE
+   hi ansiWhiteGray         ctermfg=LightGray      ctermbg=DarkGray       guifg=LightGray      guibg=DarkGray     cterm=NONE         gui=NONE
+   hi ansiGrayGray          ctermfg=DarkGray       ctermbg=DarkGray       guifg=DarkGray       guibg=DarkGray     cterm=NONE         gui=NONE
 
    if v:version >= 700 && exists("+t_Co") && &t_Co == 256 && exists("g:ansiesc_256color")
     " ---------------------------
@@ -1695,229 +1695,229 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    " not 8 or 256 color terminals (gui): {{{3
    " ----------------------------------
 "   call Decho("set up gui highlighting groups")
-   hi ansiBlack             ctermfg=black      guifg=black                                        cterm=none         gui=none
-   hi ansiRed               ctermfg=red        guifg=red                                          cterm=none         gui=none
-   hi ansiGreen             ctermfg=green      guifg=green                                        cterm=none         gui=none
-   hi ansiYellow            ctermfg=yellow     guifg=yellow                                       cterm=none         gui=none
-   hi ansiBlue              ctermfg=blue       guifg=blue                                         cterm=none         gui=none
-   hi ansiMagenta           ctermfg=magenta    guifg=magenta                                      cterm=none         gui=none
-   hi ansiCyan              ctermfg=cyan       guifg=cyan                                         cterm=none         gui=none
-   hi ansiWhite             ctermfg=white      guifg=white                                        cterm=none         gui=none
+   hi ansiBlack             ctermfg=Black      guifg=Black                                        cterm=NONE         gui=NONE
+   hi ansiRed               ctermfg=DarkRed        guifg=DarkRed                                          cterm=NONE         gui=NONE
+   hi ansiGreen             ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=NONE         gui=NONE
+   hi ansiYellow            ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=NONE         gui=NONE
+   hi ansiBlue              ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=NONE         gui=NONE
+   hi ansiMagenta           ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=NONE         gui=NONE
+   hi ansiCyan              ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=NONE         gui=NONE
+   hi ansiWhite             ctermfg=LightGray      guifg=LightGray                                        cterm=NONE         gui=NONE
 
-   hi ansiDefaultBg         ctermbg=none       guibg=none                                         cterm=none         gui=none
-   hi ansiBlackBg           ctermbg=black      guibg=black                                        cterm=none         gui=none
-   hi ansiRedBg             ctermbg=red        guibg=red                                          cterm=none         gui=none
-   hi ansiGreenBg           ctermbg=green      guibg=green                                        cterm=none         gui=none
-   hi ansiYellowBg          ctermbg=yellow     guibg=yellow                                       cterm=none         gui=none
-   hi ansiBlueBg            ctermbg=blue       guibg=blue                                         cterm=none         gui=none
-   hi ansiMagentaBg         ctermbg=magenta    guibg=magenta                                      cterm=none         gui=none
-   hi ansiCyanBg            ctermbg=cyan       guibg=cyan                                         cterm=none         gui=none
-   hi ansiWhiteBg           ctermbg=white      guibg=white                                        cterm=none         gui=none
+   hi ansiDefaultBg         ctermbg=NONE       guibg=NONE                                         cterm=NONE         gui=NONE
+   hi ansiBlackBg           ctermbg=Black      guibg=Black                                        cterm=NONE         gui=NONE
+   hi ansiRedBg             ctermbg=DarkRed        guibg=DarkRed                                          cterm=NONE         gui=NONE
+   hi ansiGreenBg           ctermbg=DarkGreen      guibg=DarkGreen                                        cterm=NONE         gui=NONE
+   hi ansiYellowBg          ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=NONE         gui=NONE
+   hi ansiBlueBg            ctermbg=DarkBlue       guibg=DarkBlue                                         cterm=NONE         gui=NONE
+   hi ansiMagentaBg         ctermbg=DarkMagenta    guibg=DarkMagenta                                      cterm=NONE         gui=NONE
+   hi ansiCyanBg            ctermbg=DarkCyan       guibg=DarkCyan                                         cterm=NONE         gui=NONE
+   hi ansiWhiteBg           ctermbg=LightGray      guibg=LightGray                                        cterm=NONE         gui=NONE
 
-   hi ansiDefaultReverseBg         ctermbg=none       guibg=none                                         cterm=reverse         gui=reverse
-   hi ansiBlackReverseBg           ctermbg=black      guibg=black                                        cterm=reverse         gui=reverse
-   hi ansiRedReverseBg             ctermbg=red        guibg=red                                          cterm=reverse         gui=reverse
-   hi ansiGreenReverseBg           ctermbg=green      guibg=green                                        cterm=reverse         gui=reverse
-   hi ansiYellowReverseBg          ctermbg=yellow     guibg=yellow                                       cterm=reverse         gui=reverse
-   hi ansiBlueReverseBg            ctermbg=blue       guibg=blue                                         cterm=reverse         gui=reverse
-   hi ansiMagentaReverseBg         ctermbg=magenta    guibg=magenta                                      cterm=reverse         gui=reverse
-   hi ansiCyanReverseBg            ctermbg=cyan       guibg=cyan                                         cterm=reverse         gui=reverse
-   hi ansiWhiteReverseBg           ctermbg=white      guibg=white                                        cterm=reverse         gui=reverse
+   hi ansiDefaultReverseBg         ctermbg=NONE       guibg=NONE                                         cterm=reverse         gui=reverse
+   hi ansiBlackReverseBg           ctermbg=Black      guibg=Black                                        cterm=reverse         gui=reverse
+   hi ansiRedReverseBg             ctermbg=DarkRed        guibg=DarkRed                                          cterm=reverse         gui=reverse
+   hi ansiGreenReverseBg           ctermbg=DarkGreen      guibg=DarkGreen                                        cterm=reverse         gui=reverse
+   hi ansiYellowReverseBg          ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=reverse         gui=reverse
+   hi ansiBlueReverseBg            ctermbg=DarkBlue       guibg=DarkBlue                                         cterm=reverse         gui=reverse
+   hi ansiMagentaReverseBg         ctermbg=DarkMagenta    guibg=DarkMagenta                                      cterm=reverse         gui=reverse
+   hi ansiCyanReverseBg            ctermbg=DarkCyan       guibg=DarkCyan                                         cterm=reverse         gui=reverse
+   hi ansiWhiteReverseBg           ctermbg=LightGray      guibg=LightGray                                        cterm=reverse         gui=reverse
 
    hi ansiBold                                                                                    cterm=bold         gui=bold
    hi ansiBoldUnderline                                                                           cterm=bold,underline gui=bold,underline
-   hi ansiBoldBlack         ctermfg=black      guifg=black                                        cterm=bold         gui=bold
-   hi ansiBoldRed           ctermfg=red        guifg=red                                          cterm=bold         gui=bold
-   hi ansiBoldGreen         ctermfg=green      guifg=green                                        cterm=bold         gui=bold
-   hi ansiBoldYellow        ctermfg=yellow     guifg=yellow                                       cterm=bold         gui=bold
-   hi ansiBoldBlue          ctermfg=blue       guifg=blue                                         cterm=bold         gui=bold
-   hi ansiBoldMagenta       ctermfg=magenta    guifg=magenta                                      cterm=bold         gui=bold
-   hi ansiBoldCyan          ctermfg=cyan       guifg=cyan                                         cterm=bold         gui=bold
-   hi ansiBoldWhite         ctermfg=white      guifg=white                                        cterm=bold         gui=bold
+   hi ansiBoldBlack         ctermfg=Black      guifg=Black                                        cterm=bold         gui=bold
+   hi ansiBoldRed           ctermfg=DarkRed        guifg=DarkRed                                          cterm=bold         gui=bold
+   hi ansiBoldGreen         ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=bold         gui=bold
+   hi ansiBoldYellow        ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=bold         gui=bold
+   hi ansiBoldBlue          ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=bold         gui=bold
+   hi ansiBoldMagenta       ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=bold         gui=bold
+   hi ansiBoldCyan          ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=bold         gui=bold
+   hi ansiBoldWhite         ctermfg=LightGray      guifg=LightGray                                        cterm=bold         gui=bold
 
-   hi ansiBlackBold         ctermbg=black      guibg=black                                        cterm=bold         gui=bold
-   hi ansiRedBold           ctermbg=red        guibg=red                                          cterm=bold         gui=bold
-   hi ansiGreenBold         ctermbg=green      guibg=green                                        cterm=bold         gui=bold
-   hi ansiYellowBold        ctermbg=yellow     guibg=yellow                                       cterm=bold         gui=bold
-   hi ansiBlueBold          ctermbg=blue       guibg=blue                                         cterm=bold         gui=bold
-   hi ansiMagentaBold       ctermbg=magenta    guibg=magenta                                      cterm=bold         gui=bold
-   hi ansiCyanBold          ctermbg=cyan       guibg=cyan                                         cterm=bold         gui=bold
-   hi ansiWhiteBold         ctermbg=white      guibg=white                                        cterm=bold         gui=bold
+   hi ansiBlackBold         ctermbg=Black      guibg=Black                                        cterm=bold         gui=bold
+   hi ansiRedBold           ctermbg=DarkRed        guibg=DarkRed                                          cterm=bold         gui=bold
+   hi ansiGreenBold         ctermbg=DarkGreen      guibg=DarkGreen                                        cterm=bold         gui=bold
+   hi ansiYellowBold        ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=bold         gui=bold
+   hi ansiBlueBold          ctermbg=DarkBlue       guibg=DarkBlue                                         cterm=bold         gui=bold
+   hi ansiMagentaBold       ctermbg=DarkMagenta    guibg=DarkMagenta                                      cterm=bold         gui=bold
+   hi ansiCyanBold          ctermbg=DarkCyan       guibg=DarkCyan                                         cterm=bold         gui=bold
+   hi ansiWhiteBold         ctermbg=LightGray      guibg=LightGray                                        cterm=bold         gui=bold
 
    hi ansiReverse                                                                                 cterm=reverse      gui=reverse
    hi ansiReverseUnderline                                                                        cterm=reverse,underline gui=reverse,underline
    hi ansiReverseBold                                                                             cterm=reverse,bold gui=reverse,bold
    hi ansiReverseBoldUnderline                                                                    cterm=reverse,bold,underline gui=reverse,bold,underline
-   hi ansiReverseBlack      ctermfg=black      guifg=black                                        cterm=reverse         gui=reverse
-   hi ansiReverseRed        ctermfg=red        guifg=red                                          cterm=reverse         gui=reverse
-   hi ansiReverseGreen      ctermfg=green      guifg=green                                        cterm=reverse         gui=reverse
-   hi ansiReverseYellow     ctermfg=yellow     guifg=yellow                                       cterm=reverse         gui=reverse
-   hi ansiReverseBlue       ctermfg=blue       guifg=blue                                         cterm=reverse         gui=reverse
-   hi ansiReverseMagenta    ctermfg=magenta    guifg=magenta                                      cterm=reverse         gui=reverse
-   hi ansiReverseCyan       ctermfg=cyan       guifg=cyan                                         cterm=reverse         gui=reverse
-   hi ansiReverseWhite      ctermfg=white      guifg=white                                        cterm=reverse         gui=reverse
+   hi ansiReverseBlack      ctermfg=Black      guifg=Black                                        cterm=reverse         gui=reverse
+   hi ansiReverseRed        ctermfg=DarkRed        guifg=DarkRed                                          cterm=reverse         gui=reverse
+   hi ansiReverseGreen      ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=reverse         gui=reverse
+   hi ansiReverseYellow     ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=reverse         gui=reverse
+   hi ansiReverseBlue       ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=reverse         gui=reverse
+   hi ansiReverseMagenta    ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=reverse         gui=reverse
+   hi ansiReverseCyan       ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=reverse         gui=reverse
+   hi ansiReverseWhite      ctermfg=LightGray      guifg=LightGray                                        cterm=reverse         gui=reverse
 
    hi ansiStandout                                                                                cterm=standout     gui=standout
-   hi ansiStandoutBlack     ctermfg=black      guifg=black                                        cterm=standout     gui=standout
-   hi ansiStandoutRed       ctermfg=red        guifg=red                                          cterm=standout     gui=standout
-   hi ansiStandoutGreen     ctermfg=green      guifg=green                                        cterm=standout     gui=standout
-   hi ansiStandoutYellow    ctermfg=yellow     guifg=yellow                                       cterm=standout     gui=standout
-   hi ansiStandoutBlue      ctermfg=blue       guifg=blue                                         cterm=standout     gui=standout
-   hi ansiStandoutMagenta   ctermfg=magenta    guifg=magenta                                      cterm=standout     gui=standout
-   hi ansiStandoutCyan      ctermfg=cyan       guifg=cyan                                         cterm=standout     gui=standout
-   hi ansiStandoutWhite     ctermfg=white      guifg=white                                        cterm=standout     gui=standout
+   hi ansiStandoutBlack     ctermfg=Black      guifg=Black                                        cterm=standout     gui=standout
+   hi ansiStandoutRed       ctermfg=DarkRed        guifg=DarkRed                                          cterm=standout     gui=standout
+   hi ansiStandoutGreen     ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=standout     gui=standout
+   hi ansiStandoutYellow    ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=standout
+   hi ansiStandoutBlue      ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=standout     gui=standout
+   hi ansiStandoutMagenta   ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=standout     gui=standout
+   hi ansiStandoutCyan      ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=standout     gui=standout
+   hi ansiStandoutWhite     ctermfg=LightGray      guifg=LightGray                                        cterm=standout     gui=standout
 
    hi ansiItalic                                                                                  cterm=italic       gui=italic
-   hi ansiItalicBlack       ctermfg=black      guifg=black                                        cterm=italic       gui=italic
-   hi ansiItalicRed         ctermfg=red        guifg=red                                          cterm=italic       gui=italic
-   hi ansiItalicGreen       ctermfg=green      guifg=green                                        cterm=italic       gui=italic
-   hi ansiItalicYellow      ctermfg=yellow     guifg=yellow                                       cterm=italic       gui=italic
-   hi ansiItalicBlue        ctermfg=blue       guifg=blue                                         cterm=italic       gui=italic
-   hi ansiItalicMagenta     ctermfg=magenta    guifg=magenta                                      cterm=italic       gui=italic
-   hi ansiItalicCyan        ctermfg=cyan       guifg=cyan                                         cterm=italic       gui=italic
-   hi ansiItalicWhite       ctermfg=white      guifg=white                                        cterm=italic       gui=italic
+   hi ansiItalicBlack       ctermfg=Black      guifg=Black                                        cterm=italic       gui=italic
+   hi ansiItalicRed         ctermfg=DarkRed        guifg=DarkRed                                          cterm=italic       gui=italic
+   hi ansiItalicGreen       ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=italic       gui=italic
+   hi ansiItalicYellow      ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=italic       gui=italic
+   hi ansiItalicBlue        ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=italic       gui=italic
+   hi ansiItalicMagenta     ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=italic       gui=italic
+   hi ansiItalicCyan        ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=italic       gui=italic
+   hi ansiItalicWhite       ctermfg=LightGray      guifg=LightGray                                        cterm=italic       gui=italic
 
    hi ansiUnderline                                                                               cterm=underline    gui=underline
-   hi ansiUnderlineBlack    ctermfg=black      guifg=black                                        cterm=underline    gui=underline
-   hi ansiUnderlineRed      ctermfg=red        guifg=red                                          cterm=underline    gui=underline
-   hi ansiUnderlineGreen    ctermfg=green      guifg=green                                        cterm=underline    gui=underline
-   hi ansiUnderlineYellow   ctermfg=yellow     guifg=yellow                                       cterm=underline    gui=underline
-   hi ansiUnderlineBlue     ctermfg=blue       guifg=blue                                         cterm=underline    gui=underline
-   hi ansiUnderlineMagenta  ctermfg=magenta    guifg=magenta                                      cterm=underline    gui=underline
-   hi ansiUnderlineCyan     ctermfg=cyan       guifg=cyan                                         cterm=underline    gui=underline
-   hi ansiUnderlineWhite    ctermfg=white      guifg=white                                        cterm=underline    gui=underline
+   hi ansiUnderlineBlack    ctermfg=Black      guifg=Black                                        cterm=underline    gui=underline
+   hi ansiUnderlineRed      ctermfg=DarkRed        guifg=DarkRed                                          cterm=underline    gui=underline
+   hi ansiUnderlineGreen    ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=underline    gui=underline
+   hi ansiUnderlineYellow   ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=underline    gui=underline
+   hi ansiUnderlineBlue     ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=underline    gui=underline
+   hi ansiUnderlineMagenta  ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=underline    gui=underline
+   hi ansiUnderlineCyan     ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=underline    gui=underline
+   hi ansiUnderlineWhite    ctermfg=LightGray      guifg=LightGray                                        cterm=underline    gui=underline
 
-   hi ansiBlackUnderline    ctermbg=black      guibg=black                                        cterm=underline    gui=underline
-   hi ansiRedUnderline      ctermbg=red        guibg=red                                          cterm=underline    gui=underline
-   hi ansiGreenUnderline    ctermbg=green      guibg=green                                        cterm=underline    gui=underline
-   hi ansiYellowUnderline   ctermbg=yellow     guibg=yellow                                       cterm=underline    gui=underline
-   hi ansiBlueUnderline     ctermbg=blue       guibg=blue                                         cterm=underline    gui=underline
-   hi ansiMagentaUnderline  ctermbg=magenta    guibg=magenta                                      cterm=underline    gui=underline
-   hi ansiCyanUnderline     ctermbg=cyan       guibg=cyan                                         cterm=underline    gui=underline
-   hi ansiWhiteUnderline    ctermbg=white      guibg=white                                        cterm=underline    gui=underline
+   hi ansiBlackUnderline    ctermbg=Black      guibg=Black                                        cterm=underline    gui=underline
+   hi ansiRedUnderline      ctermbg=DarkRed        guibg=DarkRed                                          cterm=underline    gui=underline
+   hi ansiGreenUnderline    ctermbg=DarkGreen      guibg=DarkGreen                                        cterm=underline    gui=underline
+   hi ansiYellowUnderline   ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=underline    gui=underline
+   hi ansiBlueUnderline     ctermbg=DarkBlue       guibg=DarkBlue                                         cterm=underline    gui=underline
+   hi ansiMagentaUnderline  ctermbg=DarkMagenta    guibg=DarkMagenta                                      cterm=underline    gui=underline
+   hi ansiCyanUnderline     ctermbg=DarkCyan       guibg=DarkCyan                                         cterm=underline    gui=underline
+   hi ansiWhiteUnderline    ctermbg=LightGray      guibg=LightGray                                        cterm=underline    gui=underline
 
    hi ansiBlink                                                                                   cterm=standout     gui=undercurl
-   hi ansiBlinkBlack        ctermfg=black      guifg=black                                        cterm=standout     gui=undercurl
-   hi ansiBlinkRed          ctermfg=red        guifg=red                                          cterm=standout     gui=undercurl
-   hi ansiBlinkGreen        ctermfg=green      guifg=green                                        cterm=standout     gui=undercurl
-   hi ansiBlinkYellow       ctermfg=yellow     guifg=yellow                                       cterm=standout     gui=undercurl
-   hi ansiBlinkBlue         ctermfg=blue       guifg=blue                                         cterm=standout     gui=undercurl
-   hi ansiBlinkMagenta      ctermfg=magenta    guifg=magenta                                      cterm=standout     gui=undercurl
-   hi ansiBlinkCyan         ctermfg=cyan       guifg=cyan                                         cterm=standout     gui=undercurl
-   hi ansiBlinkWhite        ctermfg=white      guifg=white                                        cterm=standout     gui=undercurl
+   hi ansiBlinkBlack        ctermfg=Black      guifg=Black                                        cterm=standout     gui=undercurl
+   hi ansiBlinkRed          ctermfg=DarkRed        guifg=DarkRed                                          cterm=standout     gui=undercurl
+   hi ansiBlinkGreen        ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=standout     gui=undercurl
+   hi ansiBlinkYellow       ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=undercurl
+   hi ansiBlinkBlue         ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=standout     gui=undercurl
+   hi ansiBlinkMagenta      ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=standout     gui=undercurl
+   hi ansiBlinkCyan         ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=standout     gui=undercurl
+   hi ansiBlinkWhite        ctermfg=LightGray      guifg=LightGray                                        cterm=standout     gui=undercurl
 
    hi ansiRapidBlink                                                                              cterm=standout     gui=undercurl
-   hi ansiRapidBlinkBlack   ctermfg=black      guifg=black                                        cterm=standout     gui=undercurl
-   hi ansiRapidBlinkRed     ctermfg=red        guifg=red                                          cterm=standout     gui=undercurl
-   hi ansiRapidBlinkGreen   ctermfg=green      guifg=green                                        cterm=standout     gui=undercurl
-   hi ansiRapidBlinkYellow  ctermfg=yellow     guifg=yellow                                       cterm=standout     gui=undercurl
-   hi ansiRapidBlinkBlue    ctermfg=blue       guifg=blue                                         cterm=standout     gui=undercurl
-   hi ansiRapidBlinkMagenta ctermfg=magenta    guifg=magenta                                      cterm=standout     gui=undercurl
-   hi ansiRapidBlinkCyan    ctermfg=cyan       guifg=cyan                                         cterm=standout     gui=undercurl
-   hi ansiRapidBlinkWhite   ctermfg=white      guifg=white                                        cterm=standout     gui=undercurl
+   hi ansiRapidBlinkBlack   ctermfg=Black      guifg=Black                                        cterm=standout     gui=undercurl
+   hi ansiRapidBlinkRed     ctermfg=DarkRed        guifg=DarkRed                                          cterm=standout     gui=undercurl
+   hi ansiRapidBlinkGreen   ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=standout     gui=undercurl
+   hi ansiRapidBlinkYellow  ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=undercurl
+   hi ansiRapidBlinkBlue    ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=standout     gui=undercurl
+   hi ansiRapidBlinkMagenta ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=standout     gui=undercurl
+   hi ansiRapidBlinkCyan    ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=standout     gui=undercurl
+   hi ansiRapidBlinkWhite   ctermfg=LightGray      guifg=LightGray                                        cterm=standout     gui=undercurl
 
    hi ansiRV                                                                                      cterm=reverse      gui=reverse
-   hi ansiRVBlack           ctermfg=black      guifg=black                                        cterm=reverse      gui=reverse
-   hi ansiRVRed             ctermfg=red        guifg=red                                          cterm=reverse      gui=reverse
-   hi ansiRVGreen           ctermfg=green      guifg=green                                        cterm=reverse      gui=reverse
-   hi ansiRVYellow          ctermfg=yellow     guifg=yellow                                       cterm=reverse      gui=reverse
-   hi ansiRVBlue            ctermfg=blue       guifg=blue                                         cterm=reverse      gui=reverse
-   hi ansiRVMagenta         ctermfg=magenta    guifg=magenta                                      cterm=reverse      gui=reverse
-   hi ansiRVCyan            ctermfg=cyan       guifg=cyan                                         cterm=reverse      gui=reverse
-   hi ansiRVWhite           ctermfg=white      guifg=white                                        cterm=reverse      gui=reverse
+   hi ansiRVBlack           ctermfg=Black      guifg=Black                                        cterm=reverse      gui=reverse
+   hi ansiRVRed             ctermfg=DarkRed        guifg=DarkRed                                          cterm=reverse      gui=reverse
+   hi ansiRVGreen           ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=reverse      gui=reverse
+   hi ansiRVYellow          ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=reverse      gui=reverse
+   hi ansiRVBlue            ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=reverse      gui=reverse
+   hi ansiRVMagenta         ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=reverse      gui=reverse
+   hi ansiRVCyan            ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=reverse      gui=reverse
+   hi ansiRVWhite           ctermfg=LightGray      guifg=LightGray                                        cterm=reverse      gui=reverse
 
-   hi ansiBoldDefault         ctermfg=none           ctermbg=none      guifg=none           guibg=none    cterm=bold         gui=bold
-   hi ansiUnderlineDefault    ctermfg=none           ctermbg=none      guifg=none           guibg=none    cterm=underline    gui=underline
-   hi ansiBlackDefault        ctermfg=black          ctermbg=none      guifg=Black          guibg=none    cterm=none         gui=none
-   hi ansiRedDefault          ctermfg=red        ctermbg=none      guifg=red        guibg=none    cterm=none         gui=none
-   hi ansiGreenDefault        ctermfg=green      ctermbg=none      guifg=green      guibg=none    cterm=none         gui=none
-   hi ansiYellowDefault       ctermfg=yellow     ctermbg=none      guifg=yellow     guibg=none    cterm=none         gui=none
-   hi ansiBlueDefault         ctermfg=blue       ctermbg=none      guifg=blue       guibg=none    cterm=none         gui=none
-   hi ansiMagentaDefault      ctermfg=magenta    ctermbg=none      guifg=magenta    guibg=none    cterm=none         gui=none
-   hi ansiCyanDefault         ctermfg=cyan       ctermbg=none      guifg=cyan       guibg=none    cterm=none         gui=none
-   hi ansiWhiteDefault        ctermfg=white      ctermbg=none      guifg=white      guibg=none    cterm=none         gui=none
+   hi ansiBoldDefault         ctermfg=NONE           ctermbg=NONE      guifg=NONE           guibg=NONE    cterm=bold         gui=bold
+   hi ansiUnderlineDefault    ctermfg=NONE           ctermbg=NONE      guifg=NONE           guibg=NONE    cterm=underline    gui=underline
+   hi ansiBlackDefault        ctermfg=Black          ctermbg=NONE      guifg=Black          guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiRedDefault          ctermfg=DarkRed        ctermbg=NONE      guifg=DarkRed        guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiGreenDefault        ctermfg=DarkGreen      ctermbg=NONE      guifg=DarkGreen      guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiYellowDefault       ctermfg=DarkYellow     ctermbg=NONE      guifg=DarkYellow     guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiBlueDefault         ctermfg=DarkBlue       ctermbg=NONE      guifg=DarkBlue       guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiMagentaDefault      ctermfg=DarkMagenta    ctermbg=NONE      guifg=DarkMagenta    guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiCyanDefault         ctermfg=DarkCyan       ctermbg=NONE      guifg=DarkCyan       guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiWhiteDefault        ctermfg=LightGray      ctermbg=NONE      guifg=LightGray      guibg=NONE    cterm=NONE         gui=NONE
 
-   hi ansiDefaultDefault      ctermfg=none      ctermbg=none       guifg=none       guibg=none    cterm=none         gui=none
-   hi ansiDefaultBlack        ctermfg=none      ctermbg=black      guifg=none       guibg=Black   cterm=none         gui=none
-   hi ansiDefaultRed          ctermfg=none        ctermbg=red      guifg=none        guibg=red    cterm=none         gui=none
-   hi ansiDefaultGreen        ctermfg=none      ctermbg=green      guifg=none      guibg=green    cterm=none         gui=none
-   hi ansiDefaultYellow       ctermfg=none     ctermbg=yellow      guifg=none     guibg=yellow    cterm=none         gui=none
-   hi ansiDefaultBlue         ctermfg=none       ctermbg=blue      guifg=none       guibg=blue    cterm=none         gui=none
-   hi ansiDefaultMagenta      ctermfg=none    ctermbg=magenta      guifg=none    guibg=magenta    cterm=none         gui=none
-   hi ansiDefaultCyan         ctermfg=none       ctermbg=cyan      guifg=none       guibg=cyan    cterm=none         gui=none
-   hi ansiDefaultWhite        ctermfg=none      ctermbg=white      guifg=none      guibg=white    cterm=none         gui=none
+   hi ansiDefaultDefault      ctermfg=NONE      ctermbg=NONE       guifg=NONE       guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiDefaultBlack        ctermfg=NONE      ctermbg=Black      guifg=NONE       guibg=Black   cterm=NONE         gui=NONE
+   hi ansiDefaultRed          ctermfg=NONE        ctermbg=DarkRed      guifg=NONE        guibg=DarkRed    cterm=NONE         gui=NONE
+   hi ansiDefaultGreen        ctermfg=NONE      ctermbg=DarkGreen      guifg=NONE      guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiDefaultYellow       ctermfg=NONE     ctermbg=DarkYellow      guifg=NONE     guibg=DarkYellow    cterm=NONE         gui=NONE
+   hi ansiDefaultBlue         ctermfg=NONE       ctermbg=DarkBlue      guifg=NONE       guibg=DarkBlue    cterm=NONE         gui=NONE
+   hi ansiDefaultMagenta      ctermfg=NONE    ctermbg=DarkMagenta      guifg=NONE    guibg=DarkMagenta    cterm=NONE         gui=NONE
+   hi ansiDefaultCyan         ctermfg=NONE       ctermbg=DarkCyan      guifg=NONE       guibg=DarkCyan    cterm=NONE         gui=NONE
+   hi ansiDefaultWhite        ctermfg=NONE      ctermbg=LightGray      guifg=NONE      guibg=LightGray    cterm=NONE         gui=NONE
  
-   hi ansiBlackBlack        ctermfg=black      ctermbg=black      guifg=Black      guibg=Black    cterm=none         gui=none
-   hi ansiRedBlack          ctermfg=red        ctermbg=black      guifg=Red        guibg=Black    cterm=none         gui=none
-   hi ansiGreenBlack        ctermfg=green      ctermbg=black      guifg=Green      guibg=Black    cterm=none         gui=none
-   hi ansiYellowBlack       ctermfg=yellow     ctermbg=black      guifg=Yellow     guibg=Black    cterm=none         gui=none
-   hi ansiBlueBlack         ctermfg=blue       ctermbg=black      guifg=Blue       guibg=Black    cterm=none         gui=none
-   hi ansiMagentaBlack      ctermfg=magenta    ctermbg=black      guifg=Magenta    guibg=Black    cterm=none         gui=none
-   hi ansiCyanBlack         ctermfg=cyan       ctermbg=black      guifg=Cyan       guibg=Black    cterm=none         gui=none
-   hi ansiWhiteBlack        ctermfg=white      ctermbg=black      guifg=White      guibg=Black    cterm=none         gui=none
+   hi ansiBlackBlack        ctermfg=Black      ctermbg=Black      guifg=Black      guibg=Black    cterm=NONE         gui=NONE
+   hi ansiRedBlack          ctermfg=DarkRed        ctermbg=Black      guifg=DarkRed        guibg=Black    cterm=NONE         gui=NONE
+   hi ansiGreenBlack        ctermfg=DarkGreen      ctermbg=Black      guifg=DarkGreen      guibg=Black    cterm=NONE         gui=NONE
+   hi ansiYellowBlack       ctermfg=DarkYellow     ctermbg=Black      guifg=DarkYellow     guibg=Black    cterm=NONE         gui=NONE
+   hi ansiBlueBlack         ctermfg=DarkBlue       ctermbg=Black      guifg=DarkBlue       guibg=Black    cterm=NONE         gui=NONE
+   hi ansiMagentaBlack      ctermfg=DarkMagenta    ctermbg=Black      guifg=DarkMagenta    guibg=Black    cterm=NONE         gui=NONE
+   hi ansiCyanBlack         ctermfg=DarkCyan       ctermbg=Black      guifg=DarkCyan       guibg=Black    cterm=NONE         gui=NONE
+   hi ansiWhiteBlack        ctermfg=LightGray      ctermbg=Black      guifg=LightGray      guibg=Black    cterm=NONE         gui=NONE
 
-   hi ansiBlackRed          ctermfg=black      ctermbg=red        guifg=Black      guibg=Red      cterm=none         gui=none
-   hi ansiRedRed            ctermfg=red        ctermbg=red        guifg=Red        guibg=Red      cterm=none         gui=none
-   hi ansiGreenRed          ctermfg=green      ctermbg=red        guifg=Green      guibg=Red      cterm=none         gui=none
-   hi ansiYellowRed         ctermfg=yellow     ctermbg=red        guifg=Yellow     guibg=Red      cterm=none         gui=none
-   hi ansiBlueRed           ctermfg=blue       ctermbg=red        guifg=Blue       guibg=Red      cterm=none         gui=none
-   hi ansiMagentaRed        ctermfg=magenta    ctermbg=red        guifg=Magenta    guibg=Red      cterm=none         gui=none
-   hi ansiCyanRed           ctermfg=cyan       ctermbg=red        guifg=Cyan       guibg=Red      cterm=none         gui=none
-   hi ansiWhiteRed          ctermfg=white      ctermbg=red        guifg=White      guibg=Red      cterm=none         gui=none
+   hi ansiBlackRed          ctermfg=Black      ctermbg=DarkRed        guifg=Black      guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiRedRed            ctermfg=DarkRed        ctermbg=DarkRed        guifg=DarkRed        guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiGreenRed          ctermfg=DarkGreen      ctermbg=DarkRed        guifg=DarkGreen      guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiYellowRed         ctermfg=DarkYellow     ctermbg=DarkRed        guifg=DarkYellow     guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiBlueRed           ctermfg=DarkBlue       ctermbg=DarkRed        guifg=DarkBlue       guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiMagentaRed        ctermfg=DarkMagenta    ctermbg=DarkRed        guifg=DarkMagenta    guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiCyanRed           ctermfg=DarkCyan       ctermbg=DarkRed        guifg=DarkCyan       guibg=DarkRed      cterm=NONE         gui=NONE
+   hi ansiWhiteRed          ctermfg=LightGray      ctermbg=DarkRed        guifg=LightGray      guibg=DarkRed      cterm=NONE         gui=NONE
 
-   hi ansiBlackGreen        ctermfg=black      ctermbg=green      guifg=Black      guibg=Green    cterm=none         gui=none
-   hi ansiRedGreen          ctermfg=red        ctermbg=green      guifg=Red        guibg=Green    cterm=none         gui=none
-   hi ansiGreenGreen        ctermfg=green      ctermbg=green      guifg=Green      guibg=Green    cterm=none         gui=none
-   hi ansiYellowGreen       ctermfg=yellow     ctermbg=green      guifg=Yellow     guibg=Green    cterm=none         gui=none
-   hi ansiBlueGreen         ctermfg=blue       ctermbg=green      guifg=Blue       guibg=Green    cterm=none         gui=none
-   hi ansiMagentaGreen      ctermfg=magenta    ctermbg=green      guifg=Magenta    guibg=Green    cterm=none         gui=none
-   hi ansiCyanGreen         ctermfg=cyan       ctermbg=green      guifg=Cyan       guibg=Green    cterm=none         gui=none
-   hi ansiWhiteGreen        ctermfg=white      ctermbg=green      guifg=White      guibg=Green    cterm=none         gui=none
+   hi ansiBlackGreen        ctermfg=Black      ctermbg=DarkGreen      guifg=Black      guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiRedGreen          ctermfg=DarkRed        ctermbg=DarkGreen      guifg=DarkRed        guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiGreenGreen        ctermfg=DarkGreen      ctermbg=DarkGreen      guifg=DarkGreen      guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiYellowGreen       ctermfg=DarkYellow     ctermbg=DarkGreen      guifg=DarkYellow     guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiBlueGreen         ctermfg=DarkBlue       ctermbg=DarkGreen      guifg=DarkBlue       guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiMagentaGreen      ctermfg=DarkMagenta    ctermbg=DarkGreen      guifg=DarkMagenta    guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiCyanGreen         ctermfg=DarkCyan       ctermbg=DarkGreen      guifg=DarkCyan       guibg=DarkGreen    cterm=NONE         gui=NONE
+   hi ansiWhiteGreen        ctermfg=LightGray      ctermbg=DarkGreen      guifg=LightGray      guibg=DarkGreen    cterm=NONE         gui=NONE
 
-   hi ansiBlackYellow       ctermfg=black      ctermbg=yellow     guifg=Black      guibg=Yellow   cterm=none         gui=none
-   hi ansiRedYellow         ctermfg=red        ctermbg=yellow     guifg=Red        guibg=Yellow   cterm=none         gui=none
-   hi ansiGreenYellow       ctermfg=green      ctermbg=yellow     guifg=Green      guibg=Yellow   cterm=none         gui=none
-   hi ansiYellowYellow      ctermfg=yellow     ctermbg=yellow     guifg=Yellow     guibg=Yellow   cterm=none         gui=none
-   hi ansiBlueYellow        ctermfg=blue       ctermbg=yellow     guifg=Blue       guibg=Yellow   cterm=none         gui=none
-   hi ansiMagentaYellow     ctermfg=magenta    ctermbg=yellow     guifg=Magenta    guibg=Yellow   cterm=none         gui=none
-   hi ansiCyanYellow        ctermfg=cyan       ctermbg=yellow     guifg=Cyan       guibg=Yellow   cterm=none         gui=none
-   hi ansiWhiteYellow       ctermfg=white      ctermbg=yellow     guifg=White      guibg=Yellow   cterm=none         gui=none
+   hi ansiBlackYellow       ctermfg=Black      ctermbg=DarkYellow     guifg=Black      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiRedYellow         ctermfg=DarkRed        ctermbg=DarkYellow     guifg=DarkRed        guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiGreenYellow       ctermfg=DarkGreen      ctermbg=DarkYellow     guifg=DarkGreen      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiYellowYellow      ctermfg=DarkYellow     ctermbg=DarkYellow     guifg=DarkYellow     guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiBlueYellow        ctermfg=DarkBlue       ctermbg=DarkYellow     guifg=DarkBlue       guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiMagentaYellow     ctermfg=DarkMagenta    ctermbg=DarkYellow     guifg=DarkMagenta    guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiCyanYellow        ctermfg=DarkCyan       ctermbg=DarkYellow     guifg=DarkCyan       guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiWhiteYellow       ctermfg=LightGray      ctermbg=DarkYellow     guifg=LightGray      guibg=DarkYellow   cterm=NONE         gui=NONE
 
-   hi ansiBlackBlue         ctermfg=black      ctermbg=blue       guifg=Black      guibg=Blue     cterm=none         gui=none
-   hi ansiRedBlue           ctermfg=red        ctermbg=blue       guifg=Red        guibg=Blue     cterm=none         gui=none
-   hi ansiGreenBlue         ctermfg=green      ctermbg=blue       guifg=Green      guibg=Blue     cterm=none         gui=none
-   hi ansiYellowBlue        ctermfg=yellow     ctermbg=blue       guifg=Yellow     guibg=Blue     cterm=none         gui=none
-   hi ansiBlueBlue          ctermfg=blue       ctermbg=blue       guifg=Blue       guibg=Blue     cterm=none         gui=none
-   hi ansiMagentaBlue       ctermfg=magenta    ctermbg=blue       guifg=Magenta    guibg=Blue     cterm=none         gui=none
-   hi ansiCyanBlue          ctermfg=cyan       ctermbg=blue       guifg=Cyan       guibg=Blue     cterm=none         gui=none
-   hi ansiWhiteBlue         ctermfg=white      ctermbg=blue       guifg=White      guibg=Blue     cterm=none         gui=none
+   hi ansiBlackBlue         ctermfg=Black      ctermbg=DarkBlue       guifg=Black      guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiRedBlue           ctermfg=DarkRed        ctermbg=DarkBlue       guifg=DarkRed        guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiGreenBlue         ctermfg=DarkGreen      ctermbg=DarkBlue       guifg=DarkGreen      guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiYellowBlue        ctermfg=DarkYellow     ctermbg=DarkBlue       guifg=DarkYellow     guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiBlueBlue          ctermfg=DarkBlue       ctermbg=DarkBlue       guifg=DarkBlue       guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiMagentaBlue       ctermfg=DarkMagenta    ctermbg=DarkBlue       guifg=DarkMagenta    guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiCyanBlue          ctermfg=DarkCyan       ctermbg=DarkBlue       guifg=DarkCyan       guibg=DarkBlue     cterm=NONE         gui=NONE
+   hi ansiWhiteBlue         ctermfg=LightGray      ctermbg=DarkBlue       guifg=LightGray      guibg=DarkBlue     cterm=NONE         gui=NONE
 
-   hi ansiBlackMagenta      ctermfg=black      ctermbg=magenta    guifg=Black      guibg=Magenta  cterm=none         gui=none
-   hi ansiRedMagenta        ctermfg=red        ctermbg=magenta    guifg=Red        guibg=Magenta  cterm=none         gui=none
-   hi ansiGreenMagenta      ctermfg=green      ctermbg=magenta    guifg=Green      guibg=Magenta  cterm=none         gui=none
-   hi ansiYellowMagenta     ctermfg=yellow     ctermbg=magenta    guifg=Yellow     guibg=Magenta  cterm=none         gui=none
-   hi ansiBlueMagenta       ctermfg=blue       ctermbg=magenta    guifg=Blue       guibg=Magenta  cterm=none         gui=none
-   hi ansiMagentaMagenta    ctermfg=magenta    ctermbg=magenta    guifg=Magenta    guibg=Magenta  cterm=none         gui=none
-   hi ansiCyanMagenta       ctermfg=cyan       ctermbg=magenta    guifg=Cyan       guibg=Magenta  cterm=none         gui=none
-   hi ansiWhiteMagenta      ctermfg=white      ctermbg=magenta    guifg=White      guibg=Magenta  cterm=none         gui=none
+   hi ansiBlackMagenta      ctermfg=Black      ctermbg=DarkMagenta    guifg=Black      guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiRedMagenta        ctermfg=DarkRed        ctermbg=DarkMagenta    guifg=DarkRed        guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiGreenMagenta      ctermfg=DarkGreen      ctermbg=DarkMagenta    guifg=DarkGreen      guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiYellowMagenta     ctermfg=DarkYellow     ctermbg=DarkMagenta    guifg=DarkYellow     guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiBlueMagenta       ctermfg=DarkBlue       ctermbg=DarkMagenta    guifg=DarkBlue       guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiMagentaMagenta    ctermfg=DarkMagenta    ctermbg=DarkMagenta    guifg=DarkMagenta    guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiCyanMagenta       ctermfg=DarkCyan       ctermbg=DarkMagenta    guifg=DarkCyan       guibg=DarkMagenta  cterm=NONE         gui=NONE
+   hi ansiWhiteMagenta      ctermfg=LightGray      ctermbg=DarkMagenta    guifg=LightGray      guibg=DarkMagenta  cterm=NONE         gui=NONE
 
-   hi ansiBlackCyan         ctermfg=black      ctermbg=cyan       guifg=Black      guibg=Cyan     cterm=none         gui=none
-   hi ansiRedCyan           ctermfg=red        ctermbg=cyan       guifg=Red        guibg=Cyan     cterm=none         gui=none
-   hi ansiGreenCyan         ctermfg=green      ctermbg=cyan       guifg=Green      guibg=Cyan     cterm=none         gui=none
-   hi ansiYellowCyan        ctermfg=yellow     ctermbg=cyan       guifg=Yellow     guibg=Cyan     cterm=none         gui=none
-   hi ansiBlueCyan          ctermfg=blue       ctermbg=cyan       guifg=Blue       guibg=Cyan     cterm=none         gui=none
-   hi ansiMagentaCyan       ctermfg=magenta    ctermbg=cyan       guifg=Magenta    guibg=Cyan     cterm=none         gui=none
-   hi ansiCyanCyan          ctermfg=cyan       ctermbg=cyan       guifg=Cyan       guibg=Cyan     cterm=none         gui=none
-   hi ansiWhiteCyan         ctermfg=white      ctermbg=cyan       guifg=White      guibg=Cyan     cterm=none         gui=none
+   hi ansiBlackCyan         ctermfg=Black      ctermbg=DarkCyan       guifg=Black      guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiRedCyan           ctermfg=DarkRed        ctermbg=DarkCyan       guifg=DarkRed        guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiGreenCyan         ctermfg=DarkGreen      ctermbg=DarkCyan       guifg=DarkGreen      guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiYellowCyan        ctermfg=DarkYellow     ctermbg=DarkCyan       guifg=DarkYellow     guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiBlueCyan          ctermfg=DarkBlue       ctermbg=DarkCyan       guifg=DarkBlue       guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiMagentaCyan       ctermfg=DarkMagenta    ctermbg=DarkCyan       guifg=DarkMagenta    guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiCyanCyan          ctermfg=DarkCyan       ctermbg=DarkCyan       guifg=DarkCyan       guibg=DarkCyan     cterm=NONE         gui=NONE
+   hi ansiWhiteCyan         ctermfg=LightGray      ctermbg=DarkCyan       guifg=LightGray      guibg=DarkCyan     cterm=NONE         gui=NONE
 
-   hi ansiBlackWhite        ctermfg=black      ctermbg=white      guifg=Black      guibg=White    cterm=none         gui=none
-   hi ansiRedWhite          ctermfg=red        ctermbg=white      guifg=Red        guibg=White    cterm=none         gui=none
-   hi ansiGreenWhite        ctermfg=green      ctermbg=white      guifg=Green      guibg=White    cterm=none         gui=none
-   hi ansiYellowWhite       ctermfg=yellow     ctermbg=white      guifg=Yellow     guibg=White    cterm=none         gui=none
-   hi ansiBlueWhite         ctermfg=blue       ctermbg=white      guifg=Blue       guibg=White    cterm=none         gui=none
-   hi ansiMagentaWhite      ctermfg=magenta    ctermbg=white      guifg=Magenta    guibg=White    cterm=none         gui=none
-   hi ansiCyanWhite         ctermfg=cyan       ctermbg=white      guifg=Cyan       guibg=White    cterm=none         gui=none
-   hi ansiWhiteWhite        ctermfg=white      ctermbg=white      guifg=White      guibg=White    cterm=none         gui=none
+   hi ansiBlackWhite        ctermfg=Black      ctermbg=LightGray      guifg=Black      guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiRedWhite          ctermfg=DarkRed        ctermbg=LightGray      guifg=DarkRed        guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiGreenWhite        ctermfg=DarkGreen      ctermbg=LightGray      guifg=DarkGreen      guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiYellowWhite       ctermfg=DarkYellow     ctermbg=LightGray      guifg=DarkYellow     guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiBlueWhite         ctermfg=DarkBlue       ctermbg=LightGray      guifg=DarkBlue       guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiMagentaWhite      ctermfg=DarkMagenta    ctermbg=LightGray      guifg=DarkMagenta    guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiCyanWhite         ctermfg=DarkCyan       ctermbg=LightGray      guifg=DarkCyan       guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiWhiteWhite        ctermfg=LightGray      ctermbg=LightGray      guifg=LightGray      guibg=LightGray    cterm=NONE         gui=NONE
   endif
 "  call Dret("AnsiEsc#AnsiEsc")
 endfun
