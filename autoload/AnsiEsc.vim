@@ -1383,7 +1383,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
   endif
 
   if has("conceal")
-   syn match ansiStop		conceal "\e\[;\=0\{1,2}m"
+   syn match ansiStop		conceal "\e\[;\=0\{0,2}m"
    syn match ansiStop		conceal "\e\[K"
    syn match ansiStop		conceal "\e\[H"
    syn match ansiStop		conceal "\e\[2J"
