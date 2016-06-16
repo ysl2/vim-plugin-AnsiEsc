@@ -1824,6 +1824,16 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiWhite             ctermfg=LightGray      guifg=LightGray                                        cterm=NONE         gui=NONE
    hi ansiGray              ctermfg=DarkGray       guifg=DarkGray                                         cterm=NONE         gui=NONE
 
+   hi ansiBlackFg           ctermfg=Black      guifg=Black                                        cterm=NONE         gui=NONE
+   hi ansiRedFg             ctermfg=DarkRed        guifg=DarkRed                                          cterm=NONE         gui=NONE
+   hi ansiGreenFg           ctermfg=DarkGreen      guifg=DarkGreen                                        cterm=NONE         gui=NONE
+   hi ansiYellowFg          ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=NONE         gui=NONE
+   hi ansiBlueFg            ctermfg=DarkBlue       guifg=DarkBlue                                         cterm=NONE         gui=NONE
+   hi ansiMagentaFg         ctermfg=DarkMagenta    guifg=DarkMagenta                                      cterm=NONE         gui=NONE
+   hi ansiCyanFg            ctermfg=DarkCyan       guifg=DarkCyan                                         cterm=NONE         gui=NONE
+   hi ansiWhiteFg           ctermfg=LightGray      guifg=LightGray                                        cterm=NONE         gui=NONE
+   hi ansiGrayFg            ctermfg=DarkGray       guifg=DarkGray                                         cterm=NONE         gui=NONE
+
    hi ansiDefaultBg         ctermbg=NONE       guibg=NONE                                         cterm=NONE         gui=NONE
    hi ansiBlackBg           ctermbg=Black      guibg=Black                                        cterm=NONE         gui=NONE
    hi ansiRedBg             ctermbg=DarkRed        guibg=DarkRed                                          cterm=NONE         gui=NONE
