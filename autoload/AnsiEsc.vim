@@ -2111,11 +2111,8 @@ fun! s:MultiElementHandler()
       continue
      elseif skip == 385
       " handling <esc>[38;5;...
-      if has("gui") && has("gui_running")
-       let fg= s:Ansi2Gui(code)
-      else
-       let fg= code
-      endif
+      let fg= code
+      let guifg= s:Ansi2Gui(code)
       let skip= 0
 "      call Decho(" 2: building code=".code." skip=".skip.": mod<".mod."> fg<".fg."> bg<".bg.">")
       continue
@@ -2127,11 +2124,8 @@ fun! s:MultiElementHandler()
       continue
      elseif skip == 485
       " handling <esc>[48;5;...
-      if has("gui") && has("gui_running")
-       let bg= s:Ansi2Gui(code)
-      else
-       let bg= code
-      endif
+      let bg= code
+      let guibg= s:Ansi2Gui(code)
       let skip= 0
 "      call Decho(" 4: building code=".code." skip=".skip.": mod<".mod."> fg<".fg."> bg<".bg.">")
       continue
@@ -2212,16 +2206,10 @@ fun! s:MultiElementHandler()
 
     " build highlighting rule
     let hirule= "hi ansiMEH".mehcnt
-    if has("gui") && has("gui_running")
-     let hirule=hirule." gui=".mod
-     if fg != ""| let hirule=hirule." guifg=".fg| endif
-     if bg != ""| let hirule=hirule." guibg=".bg| endif
-    else
-     let hirule=hirule." cterm=".mod
-     if fg != ""| let hirule=hirule." ctermfg=".fg| endif
-     if bg != ""| let hirule=hirule." ctermbg=".bg| endif
-    endif
-"    call Decho(" exe hirule: ".hirule)
+    let hirule=hirule." cterm=".mod." gui=".mod
+    if fg != ""| let hirule=hirule." ctermfg=".fg." guifg=".guifg| endif
+    if bg != ""| let hirule=hirule." ctermbg=".bg." guibg=".guibg| endif
+    "call Decho(" exe hirule: ".hirule)
     exe hirule
    endif
 
