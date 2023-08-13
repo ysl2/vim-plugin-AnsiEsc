@@ -2080,7 +2080,6 @@ endfun
 " s:MultiElementHandler: builds custom syntax highlighting for three or more element ansi escape sequences {{{2
 fun! s:MultiElementHandler()
 "  call Dfunc("s:MultiElementHandler()")
-  let curwp= SaveWinPosn(0)
   keepj 1
   keepj norm! 0
   let mehcnt = 0
@@ -2215,7 +2214,6 @@ fun! s:MultiElementHandler()
 
   endwhile
 
-  call RestoreWinPosn(curwp)
 "  call Dret("s:MultiElementHandler")
 endfun
 
