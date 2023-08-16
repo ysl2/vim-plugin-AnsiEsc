@@ -1530,7 +1530,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlack             ctermfg=Black      guifg=Black                                        cterm=NONE         gui=NONE
    hi ansiRed               ctermfg=Red        guifg=Red                                          cterm=NONE         gui=NONE
    hi ansiGreen             ctermfg=Green      guifg=Green                                        cterm=NONE         gui=NONE
-   hi ansiYellow            ctermfg=Yellow     guifg=Yellow                                       cterm=NONE         gui=NONE
+   hi ansiYellow            ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=NONE         gui=NONE
    hi ansiBlue              ctermfg=Blue       guifg=Blue                                         cterm=NONE         gui=NONE
    hi ansiMagenta           ctermfg=Magenta    guifg=Magenta                                      cterm=NONE         gui=NONE
    hi ansiCyan              ctermfg=Cyan       guifg=Cyan                                         cterm=NONE         gui=NONE
@@ -1541,7 +1541,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackBg           ctermbg=Black      guibg=Black                                        cterm=NONE         gui=NONE
    hi ansiRedBg             ctermbg=Red        guibg=Red                                          cterm=NONE         gui=NONE
    hi ansiGreenBg           ctermbg=Green      guibg=Green                                        cterm=NONE         gui=NONE
-   hi ansiYellowBg          ctermbg=Yellow     guibg=Yellow                                       cterm=NONE         gui=NONE
+   hi ansiYellowBg          ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=NONE         gui=NONE
    hi ansiBlueBg            ctermbg=Blue       guibg=Blue                                         cterm=NONE         gui=NONE
    hi ansiMagentaBg         ctermbg=Magenta    guibg=Magenta                                      cterm=NONE         gui=NONE
    hi ansiCyanBg            ctermbg=Cyan       guibg=Cyan                                         cterm=NONE         gui=NONE
@@ -1551,7 +1551,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackFg           ctermfg=Black      guifg=Black                                        cterm=NONE         gui=NONE
    hi ansiRedFg             ctermfg=Red        guifg=Red                                          cterm=NONE         gui=NONE
    hi ansiGreenFg           ctermfg=Green      guifg=Green                                        cterm=NONE         gui=NONE
-   hi ansiYellowFg          ctermfg=Yellow     guifg=Yellow                                       cterm=NONE         gui=NONE
+   hi ansiYellowFg          ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=NONE         gui=NONE
    hi ansiBlueFg            ctermfg=Blue       guifg=Blue                                         cterm=NONE         gui=NONE
    hi ansiMagentaFg         ctermfg=Magenta    guifg=Magenta                                      cterm=NONE         gui=NONE
    hi ansiCyanFg            ctermfg=Cyan       guifg=Cyan                                         cterm=NONE         gui=NONE
@@ -1562,7 +1562,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackReverseBg           ctermbg=Black      guibg=Black                                        cterm=reverse         gui=reverse
    hi ansiRedReverseBg             ctermbg=Red        guibg=Red                                          cterm=reverse         gui=reverse
    hi ansiGreenReverseBg           ctermbg=Green      guibg=Green                                        cterm=reverse         gui=reverse
-   hi ansiYellowReverseBg          ctermbg=Yellow     guibg=Yellow                                       cterm=reverse         gui=reverse
+   hi ansiYellowReverseBg          ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=reverse         gui=reverse
    hi ansiBlueReverseBg            ctermbg=Blue       guibg=Blue                                         cterm=reverse         gui=reverse
    hi ansiMagentaReverseBg         ctermbg=Magenta    guibg=Magenta                                      cterm=reverse         gui=reverse
    hi ansiCyanReverseBg            ctermbg=Cyan       guibg=Cyan                                         cterm=reverse         gui=reverse
@@ -1573,7 +1573,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBoldBlack         ctermfg=Black      guifg=Black                                        cterm=bold         gui=bold
    hi ansiBoldRed           ctermfg=Red        guifg=Red                                          cterm=bold         gui=bold
    hi ansiBoldGreen         ctermfg=Green      guifg=Green                                        cterm=bold         gui=bold
-   hi ansiBoldYellow        ctermfg=Yellow     guifg=Yellow                                       cterm=bold         gui=bold
+   hi ansiBoldYellow        ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=bold         gui=bold
    hi ansiBoldBlue          ctermfg=Blue       guifg=Blue                                         cterm=bold         gui=bold
    hi ansiBoldMagenta       ctermfg=Magenta    guifg=Magenta                                      cterm=bold         gui=bold
    hi ansiBoldCyan          ctermfg=Cyan       guifg=Cyan                                         cterm=bold         gui=bold
@@ -1583,7 +1583,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackBold         ctermbg=Black      guibg=Black                                        cterm=bold         gui=bold
    hi ansiRedBold           ctermbg=Red        guibg=Red                                          cterm=bold         gui=bold
    hi ansiGreenBold         ctermbg=Green      guibg=Green                                        cterm=bold         gui=bold
-   hi ansiYellowBold        ctermbg=Yellow     guibg=Yellow                                       cterm=bold         gui=bold
+   hi ansiYellowBold        ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=bold         gui=bold
    hi ansiBlueBold          ctermbg=Blue       guibg=Blue                                         cterm=bold         gui=bold
    hi ansiMagentaBold       ctermbg=Magenta    guibg=Magenta                                      cterm=bold         gui=bold
    hi ansiCyanBold          ctermbg=Cyan       guibg=Cyan                                         cterm=bold         gui=bold
@@ -1596,7 +1596,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiReverseBlack      ctermfg=Black      guifg=Black                                        cterm=reverse         gui=reverse
    hi ansiReverseRed        ctermfg=Red        guifg=Red                                          cterm=reverse         gui=reverse
    hi ansiReverseGreen      ctermfg=Green      guifg=Green                                        cterm=reverse         gui=reverse
-   hi ansiReverseYellow     ctermfg=Yellow     guifg=Yellow                                       cterm=reverse         gui=reverse
+   hi ansiReverseYellow     ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=reverse         gui=reverse
    hi ansiReverseBlue       ctermfg=Blue       guifg=Blue                                         cterm=reverse         gui=reverse
    hi ansiReverseMagenta    ctermfg=Magenta    guifg=Magenta                                      cterm=reverse         gui=reverse
    hi ansiReverseCyan       ctermfg=Cyan       guifg=Cyan                                         cterm=reverse         gui=reverse
@@ -1607,7 +1607,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiStandoutBlack     ctermfg=Black      guifg=Black                                        cterm=standout     gui=standout
    hi ansiStandoutRed       ctermfg=Red        guifg=Red                                          cterm=standout     gui=standout
    hi ansiStandoutGreen     ctermfg=Green      guifg=Green                                        cterm=standout     gui=standout
-   hi ansiStandoutYellow    ctermfg=Yellow     guifg=Yellow                                       cterm=standout     gui=standout
+   hi ansiStandoutYellow    ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=standout
    hi ansiStandoutBlue      ctermfg=Blue       guifg=Blue                                         cterm=standout     gui=standout
    hi ansiStandoutMagenta   ctermfg=Magenta    guifg=Magenta                                      cterm=standout     gui=standout
    hi ansiStandoutCyan      ctermfg=Cyan       guifg=Cyan                                         cterm=standout     gui=standout
@@ -1618,7 +1618,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiItalicBlack       ctermfg=Black      guifg=Black                                        cterm=italic       gui=italic
    hi ansiItalicRed         ctermfg=Red        guifg=Red                                          cterm=italic       gui=italic
    hi ansiItalicGreen       ctermfg=Green      guifg=Green                                        cterm=italic       gui=italic
-   hi ansiItalicYellow      ctermfg=Yellow     guifg=Yellow                                       cterm=italic       gui=italic
+   hi ansiItalicYellow      ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=italic       gui=italic
    hi ansiItalicBlue        ctermfg=Blue       guifg=Blue                                         cterm=italic       gui=italic
    hi ansiItalicMagenta     ctermfg=Magenta    guifg=Magenta                                      cterm=italic       gui=italic
    hi ansiItalicCyan        ctermfg=Cyan       guifg=Cyan                                         cterm=italic       gui=italic
@@ -1629,7 +1629,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiUnderlineBlack    ctermfg=Black      guifg=Black                                        cterm=underline    gui=underline
    hi ansiUnderlineRed      ctermfg=Red        guifg=Red                                          cterm=underline    gui=underline
    hi ansiUnderlineGreen    ctermfg=Green      guifg=Green                                        cterm=underline    gui=underline
-   hi ansiUnderlineYellow   ctermfg=Yellow     guifg=Yellow                                       cterm=underline    gui=underline
+   hi ansiUnderlineYellow   ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=underline    gui=underline
    hi ansiUnderlineBlue     ctermfg=Blue       guifg=Blue                                         cterm=underline    gui=underline
    hi ansiUnderlineMagenta  ctermfg=Magenta    guifg=Magenta                                      cterm=underline    gui=underline
    hi ansiUnderlineCyan     ctermfg=Cyan       guifg=Cyan                                         cterm=underline    gui=underline
@@ -1639,7 +1639,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackUnderline    ctermbg=Black      guibg=Black                                        cterm=underline    gui=underline
    hi ansiRedUnderline      ctermbg=Red        guibg=Red                                          cterm=underline    gui=underline
    hi ansiGreenUnderline    ctermbg=Green      guibg=Green                                        cterm=underline    gui=underline
-   hi ansiYellowUnderline   ctermbg=Yellow     guibg=Yellow                                       cterm=underline    gui=underline
+   hi ansiYellowUnderline   ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=underline    gui=underline
    hi ansiBlueUnderline     ctermbg=Blue       guibg=Blue                                         cterm=underline    gui=underline
    hi ansiMagentaUnderline  ctermbg=Magenta    guibg=Magenta                                      cterm=underline    gui=underline
    hi ansiCyanUnderline     ctermbg=Cyan       guibg=Cyan                                         cterm=underline    gui=underline
@@ -1649,7 +1649,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlinkBlack        ctermfg=Black      guifg=Black                                        cterm=standout     gui=undercurl
    hi ansiBlinkRed          ctermfg=Red        guifg=Red                                          cterm=standout     gui=undercurl
    hi ansiBlinkGreen        ctermfg=Green      guifg=Green                                        cterm=standout     gui=undercurl
-   hi ansiBlinkYellow       ctermfg=Yellow     guifg=Yellow                                       cterm=standout     gui=undercurl
+   hi ansiBlinkYellow       ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=undercurl
    hi ansiBlinkBlue         ctermfg=Blue       guifg=Blue                                         cterm=standout     gui=undercurl
    hi ansiBlinkMagenta      ctermfg=Magenta    guifg=Magenta                                      cterm=standout     gui=undercurl
    hi ansiBlinkCyan         ctermfg=Cyan       guifg=Cyan                                         cterm=standout     gui=undercurl
@@ -1660,7 +1660,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiRapidBlinkBlack   ctermfg=Black      guifg=Black                                        cterm=standout     gui=undercurl
    hi ansiRapidBlinkRed     ctermfg=Red        guifg=Red                                          cterm=standout     gui=undercurl
    hi ansiRapidBlinkGreen   ctermfg=Green      guifg=Green                                        cterm=standout     gui=undercurl
-   hi ansiRapidBlinkYellow  ctermfg=Yellow     guifg=Yellow                                       cterm=standout     gui=undercurl
+   hi ansiRapidBlinkYellow  ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=undercurl
    hi ansiRapidBlinkBlue    ctermfg=Blue       guifg=Blue                                         cterm=standout     gui=undercurl
    hi ansiRapidBlinkMagenta ctermfg=Magenta    guifg=Magenta                                      cterm=standout     gui=undercurl
    hi ansiRapidBlinkCyan    ctermfg=Cyan       guifg=Cyan                                         cterm=standout     gui=undercurl
@@ -1671,7 +1671,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiRVBlack           ctermfg=Black      guifg=Black                                        cterm=reverse      gui=reverse
    hi ansiRVRed             ctermfg=Red        guifg=Red                                          cterm=reverse      gui=reverse
    hi ansiRVGreen           ctermfg=Green      guifg=Green                                        cterm=reverse      gui=reverse
-   hi ansiRVYellow          ctermfg=Yellow     guifg=Yellow                                       cterm=reverse      gui=reverse
+   hi ansiRVYellow          ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=reverse      gui=reverse
    hi ansiRVBlue            ctermfg=Blue       guifg=Blue                                         cterm=reverse      gui=reverse
    hi ansiRVMagenta         ctermfg=Magenta    guifg=Magenta                                      cterm=reverse      gui=reverse
    hi ansiRVCyan            ctermfg=Cyan       guifg=Cyan                                         cterm=reverse      gui=reverse
@@ -1683,7 +1683,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackDefault        ctermfg=Black          ctermbg=NONE      guifg=Black          guibg=NONE    cterm=NONE         gui=NONE
    hi ansiRedDefault          ctermfg=Red        ctermbg=NONE      guifg=Red        guibg=NONE    cterm=NONE         gui=NONE
    hi ansiGreenDefault        ctermfg=Green      ctermbg=NONE      guifg=Green      guibg=NONE    cterm=NONE         gui=NONE
-   hi ansiYellowDefault       ctermfg=Yellow     ctermbg=NONE      guifg=Yellow     guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiYellowDefault       ctermfg=DarkYellow     ctermbg=NONE      guifg=DarkYellow     guibg=NONE    cterm=NONE         gui=NONE
    hi ansiBlueDefault         ctermfg=Blue       ctermbg=NONE      guifg=Blue       guibg=NONE    cterm=NONE         gui=NONE
    hi ansiMagentaDefault      ctermfg=Magenta    ctermbg=NONE      guifg=Magenta    guibg=NONE    cterm=NONE         gui=NONE
    hi ansiCyanDefault         ctermfg=Cyan       ctermbg=NONE      guifg=Cyan       guibg=NONE    cterm=NONE         gui=NONE
@@ -1694,7 +1694,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiDefaultBlack        ctermfg=NONE      ctermbg=Black      guifg=NONE       guibg=Black   cterm=NONE         gui=NONE
    hi ansiDefaultRed          ctermfg=NONE        ctermbg=Red      guifg=NONE        guibg=Red    cterm=NONE         gui=NONE
    hi ansiDefaultGreen        ctermfg=NONE      ctermbg=Green      guifg=NONE      guibg=Green    cterm=NONE         gui=NONE
-   hi ansiDefaultYellow       ctermfg=NONE     ctermbg=Yellow      guifg=NONE     guibg=Yellow    cterm=NONE         gui=NONE
+   hi ansiDefaultYellow       ctermfg=NONE     ctermbg=DarkYellow      guifg=NONE     guibg=DarkYellow    cterm=NONE         gui=NONE
    hi ansiDefaultBlue         ctermfg=NONE       ctermbg=Blue      guifg=NONE       guibg=Blue    cterm=NONE         gui=NONE
    hi ansiDefaultMagenta      ctermfg=NONE    ctermbg=Magenta      guifg=NONE    guibg=Magenta    cterm=NONE         gui=NONE
    hi ansiDefaultCyan         ctermfg=NONE       ctermbg=Cyan      guifg=NONE       guibg=Cyan    cterm=NONE         gui=NONE
@@ -1704,7 +1704,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackBlack        ctermfg=Black      ctermbg=Black      guifg=Black      guibg=Black    cterm=NONE         gui=NONE
    hi ansiRedBlack          ctermfg=Red        ctermbg=Black      guifg=Red        guibg=Black    cterm=NONE         gui=NONE
    hi ansiGreenBlack        ctermfg=Green      ctermbg=Black      guifg=Green      guibg=Black    cterm=NONE         gui=NONE
-   hi ansiYellowBlack       ctermfg=Yellow     ctermbg=Black      guifg=Yellow     guibg=Black    cterm=NONE         gui=NONE
+   hi ansiYellowBlack       ctermfg=DarkYellow     ctermbg=Black      guifg=DarkYellow     guibg=Black    cterm=NONE         gui=NONE
    hi ansiBlueBlack         ctermfg=Blue       ctermbg=Black      guifg=Blue       guibg=Black    cterm=NONE         gui=NONE
    hi ansiMagentaBlack      ctermfg=Magenta    ctermbg=Black      guifg=Magenta    guibg=Black    cterm=NONE         gui=NONE
    hi ansiCyanBlack         ctermfg=Cyan       ctermbg=Black      guifg=Cyan       guibg=Black    cterm=NONE         gui=NONE
@@ -1714,7 +1714,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackRed          ctermfg=Black      ctermbg=Red        guifg=Black      guibg=Red      cterm=NONE         gui=NONE
    hi ansiRedRed            ctermfg=Red        ctermbg=Red        guifg=Red        guibg=Red      cterm=NONE         gui=NONE
    hi ansiGreenRed          ctermfg=Green      ctermbg=Red        guifg=Green      guibg=Red      cterm=NONE         gui=NONE
-   hi ansiYellowRed         ctermfg=Yellow     ctermbg=Red        guifg=Yellow     guibg=Red      cterm=NONE         gui=NONE
+   hi ansiYellowRed         ctermfg=DarkYellow     ctermbg=Red        guifg=DarkYellow     guibg=Red      cterm=NONE         gui=NONE
    hi ansiBlueRed           ctermfg=Blue       ctermbg=Red        guifg=Blue       guibg=Red      cterm=NONE         gui=NONE
    hi ansiMagentaRed        ctermfg=Magenta    ctermbg=Red        guifg=Magenta    guibg=Red      cterm=NONE         gui=NONE
    hi ansiCyanRed           ctermfg=Cyan       ctermbg=Red        guifg=Cyan       guibg=Red      cterm=NONE         gui=NONE
@@ -1724,27 +1724,27 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackGreen        ctermfg=Black      ctermbg=Green      guifg=Black      guibg=Green    cterm=NONE         gui=NONE
    hi ansiRedGreen          ctermfg=Red        ctermbg=Green      guifg=Red        guibg=Green    cterm=NONE         gui=NONE
    hi ansiGreenGreen        ctermfg=Green      ctermbg=Green      guifg=Green      guibg=Green    cterm=NONE         gui=NONE
-   hi ansiYellowGreen       ctermfg=Yellow     ctermbg=Green      guifg=Yellow     guibg=Green    cterm=NONE         gui=NONE
+   hi ansiYellowGreen       ctermfg=DarkYellow     ctermbg=Green      guifg=DarkYellow     guibg=Green    cterm=NONE         gui=NONE
    hi ansiBlueGreen         ctermfg=Blue       ctermbg=Green      guifg=Blue       guibg=Green    cterm=NONE         gui=NONE
    hi ansiMagentaGreen      ctermfg=Magenta    ctermbg=Green      guifg=Magenta    guibg=Green    cterm=NONE         gui=NONE
    hi ansiCyanGreen         ctermfg=Cyan       ctermbg=Green      guifg=Cyan       guibg=Green    cterm=NONE         gui=NONE
    hi ansiWhiteGreen        ctermfg=LightGray      ctermbg=Green      guifg=LightGray      guibg=Green    cterm=NONE         gui=NONE
    hi ansiGrayGreen         ctermfg=Gray       ctermbg=Green      guifg=Gray       guibg=Green    cterm=NONE         gui=NONE
 
-   hi ansiBlackYellow       ctermfg=Black      ctermbg=Yellow     guifg=Black      guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiRedYellow         ctermfg=Red        ctermbg=Yellow     guifg=Red        guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiGreenYellow       ctermfg=Green      ctermbg=Yellow     guifg=Green      guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiYellowYellow      ctermfg=Yellow     ctermbg=Yellow     guifg=Yellow     guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiBlueYellow        ctermfg=Blue       ctermbg=Yellow     guifg=Blue       guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiMagentaYellow     ctermfg=Magenta    ctermbg=Yellow     guifg=Magenta    guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiCyanYellow        ctermfg=Cyan       ctermbg=Yellow     guifg=Cyan       guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiWhiteYellow       ctermfg=LightGray      ctermbg=Yellow     guifg=LightGray      guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiGrayYellow        ctermfg=Gray       ctermbg=Yellow     guifg=Gray       guibg=Yellow   cterm=NONE         gui=NONE
+   hi ansiBlackYellow       ctermfg=Black      ctermbg=DarkYellow     guifg=Black      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiRedYellow         ctermfg=Red        ctermbg=DarkYellow     guifg=Red        guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiGreenYellow       ctermfg=Green      ctermbg=DarkYellow     guifg=Green      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiYellowYellow      ctermfg=DarkYellow     ctermbg=DarkYellow     guifg=DarkYellow     guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiBlueYellow        ctermfg=Blue       ctermbg=DarkYellow     guifg=Blue       guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiMagentaYellow     ctermfg=Magenta    ctermbg=DarkYellow     guifg=Magenta    guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiCyanYellow        ctermfg=Cyan       ctermbg=DarkYellow     guifg=Cyan       guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiWhiteYellow       ctermfg=LightGray      ctermbg=DarkYellow     guifg=LightGray      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiGrayYellow        ctermfg=Gray       ctermbg=DarkYellow     guifg=Gray       guibg=DarkYellow   cterm=NONE         gui=NONE
 
    hi ansiBlackBlue         ctermfg=Black      ctermbg=Blue       guifg=Black      guibg=Blue     cterm=NONE         gui=NONE
    hi ansiRedBlue           ctermfg=Red        ctermbg=Blue       guifg=Red        guibg=Blue     cterm=NONE         gui=NONE
    hi ansiGreenBlue         ctermfg=Green      ctermbg=Blue       guifg=Green      guibg=Blue     cterm=NONE         gui=NONE
-   hi ansiYellowBlue        ctermfg=Yellow     ctermbg=Blue       guifg=Yellow     guibg=Blue     cterm=NONE         gui=NONE
+   hi ansiYellowBlue        ctermfg=DarkYellow     ctermbg=Blue       guifg=DarkYellow     guibg=Blue     cterm=NONE         gui=NONE
    hi ansiBlueBlue          ctermfg=Blue       ctermbg=Blue       guifg=Blue       guibg=Blue     cterm=NONE         gui=NONE
    hi ansiMagentaBlue       ctermfg=Magenta    ctermbg=Blue       guifg=Magenta    guibg=Blue     cterm=NONE         gui=NONE
    hi ansiCyanBlue          ctermfg=Cyan       ctermbg=Blue       guifg=Cyan       guibg=Blue     cterm=NONE         gui=NONE
@@ -1754,7 +1754,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackMagenta      ctermfg=Black      ctermbg=Magenta    guifg=Black      guibg=Magenta  cterm=NONE         gui=NONE
    hi ansiRedMagenta        ctermfg=Red        ctermbg=Magenta    guifg=Red        guibg=Magenta  cterm=NONE         gui=NONE
    hi ansiGreenMagenta      ctermfg=Green      ctermbg=Magenta    guifg=Green      guibg=Magenta  cterm=NONE         gui=NONE
-   hi ansiYellowMagenta     ctermfg=Yellow     ctermbg=Magenta    guifg=Yellow     guibg=Magenta  cterm=NONE         gui=NONE
+   hi ansiYellowMagenta     ctermfg=DarkYellow     ctermbg=Magenta    guifg=DarkYellow     guibg=Magenta  cterm=NONE         gui=NONE
    hi ansiBlueMagenta       ctermfg=Blue       ctermbg=Magenta    guifg=Blue       guibg=Magenta  cterm=NONE         gui=NONE
    hi ansiMagentaMagenta    ctermfg=Magenta    ctermbg=Magenta    guifg=Magenta    guibg=Magenta  cterm=NONE         gui=NONE
    hi ansiCyanMagenta       ctermfg=Cyan       ctermbg=Magenta    guifg=Cyan       guibg=Magenta  cterm=NONE         gui=NONE
@@ -1764,7 +1764,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackCyan         ctermfg=Black      ctermbg=Cyan       guifg=Black      guibg=Cyan     cterm=NONE         gui=NONE
    hi ansiRedCyan           ctermfg=Red        ctermbg=Cyan       guifg=Red        guibg=Cyan     cterm=NONE         gui=NONE
    hi ansiGreenCyan         ctermfg=Green      ctermbg=Cyan       guifg=Green      guibg=Cyan     cterm=NONE         gui=NONE
-   hi ansiYellowCyan        ctermfg=Yellow     ctermbg=Cyan       guifg=Yellow     guibg=Cyan     cterm=NONE         gui=NONE
+   hi ansiYellowCyan        ctermfg=DarkYellow     ctermbg=Cyan       guifg=DarkYellow     guibg=Cyan     cterm=NONE         gui=NONE
    hi ansiBlueCyan          ctermfg=Blue       ctermbg=Cyan       guifg=Blue       guibg=Cyan     cterm=NONE         gui=NONE
    hi ansiMagentaCyan       ctermfg=Magenta    ctermbg=Cyan       guifg=Magenta    guibg=Cyan     cterm=NONE         gui=NONE
    hi ansiCyanCyan          ctermfg=Cyan       ctermbg=Cyan       guifg=Cyan       guibg=Cyan     cterm=NONE         gui=NONE
@@ -1774,7 +1774,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackWhite        ctermfg=Black      ctermbg=LightGray      guifg=Black      guibg=LightGray    cterm=NONE         gui=NONE
    hi ansiRedWhite          ctermfg=Red        ctermbg=LightGray      guifg=Red        guibg=LightGray    cterm=NONE         gui=NONE
    hi ansiGreenWhite        ctermfg=Green      ctermbg=LightGray      guifg=Green      guibg=LightGray    cterm=NONE         gui=NONE
-   hi ansiYellowWhite       ctermfg=Yellow     ctermbg=LightGray      guifg=Yellow     guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiYellowWhite       ctermfg=DarkYellow     ctermbg=LightGray      guifg=DarkYellow     guibg=LightGray    cterm=NONE         gui=NONE
    hi ansiBlueWhite         ctermfg=Blue       ctermbg=LightGray      guifg=Blue       guibg=LightGray    cterm=NONE         gui=NONE
    hi ansiMagentaWhite      ctermfg=Magenta    ctermbg=LightGray      guifg=Magenta    guibg=LightGray    cterm=NONE         gui=NONE
    hi ansiCyanWhite         ctermfg=Cyan       ctermbg=LightGray      guifg=Cyan       guibg=LightGray    cterm=NONE         gui=NONE
@@ -1784,7 +1784,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackGray         ctermfg=Black      ctermbg=Gray       guifg=Black      guibg=Gray     cterm=NONE         gui=NONE
    hi ansiRedGray           ctermfg=Red        ctermbg=Gray       guifg=Red        guibg=Gray     cterm=NONE         gui=NONE
    hi ansiGreenGray         ctermfg=Green      ctermbg=Gray       guifg=Green      guibg=Gray     cterm=NONE         gui=NONE
-   hi ansiYellowGray        ctermfg=Yellow     ctermbg=Gray       guifg=Yellow     guibg=Gray     cterm=NONE         gui=NONE
+   hi ansiYellowGray        ctermfg=DarkYellow     ctermbg=Gray       guifg=DarkYellow     guibg=Gray     cterm=NONE         gui=NONE
    hi ansiBlueGray          ctermfg=Blue       ctermbg=Gray       guifg=Blue       guibg=Gray     cterm=NONE         gui=NONE
    hi ansiMagentaGray       ctermfg=Magenta    ctermbg=Gray       guifg=Magenta    guibg=Gray     cterm=NONE         gui=NONE
    hi ansiCyanGray          ctermfg=Cyan       ctermbg=Gray       guifg=Cyan       guibg=Gray     cterm=NONE         gui=NONE
@@ -1819,7 +1819,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlack             ctermfg=Black      guifg=Black                                        cterm=NONE         gui=NONE
    hi ansiRed               ctermfg=Red        guifg=Red                                          cterm=NONE         gui=NONE
    hi ansiGreen             ctermfg=Green      guifg=Green                                        cterm=NONE         gui=NONE
-   hi ansiYellow            ctermfg=Yellow     guifg=Yellow                                       cterm=NONE         gui=NONE
+   hi ansiYellow            ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=NONE         gui=NONE
    hi ansiBlue              ctermfg=Blue       guifg=Blue                                         cterm=NONE         gui=NONE
    hi ansiMagenta           ctermfg=Magenta    guifg=Magenta                                      cterm=NONE         gui=NONE
    hi ansiCyan              ctermfg=Cyan       guifg=Cyan                                         cterm=NONE         gui=NONE
@@ -1829,7 +1829,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackFg           ctermfg=Black      guifg=Black                                        cterm=NONE         gui=NONE
    hi ansiRedFg             ctermfg=Red        guifg=Red                                          cterm=NONE         gui=NONE
    hi ansiGreenFg           ctermfg=Green      guifg=Green                                        cterm=NONE         gui=NONE
-   hi ansiYellowFg          ctermfg=Yellow     guifg=Yellow                                       cterm=NONE         gui=NONE
+   hi ansiYellowFg          ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=NONE         gui=NONE
    hi ansiBlueFg            ctermfg=Blue       guifg=Blue                                         cterm=NONE         gui=NONE
    hi ansiMagentaFg         ctermfg=Magenta    guifg=Magenta                                      cterm=NONE         gui=NONE
    hi ansiCyanFg            ctermfg=Cyan       guifg=Cyan                                         cterm=NONE         gui=NONE
@@ -1840,7 +1840,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackBg           ctermbg=Black      guibg=Black                                        cterm=NONE         gui=NONE
    hi ansiRedBg             ctermbg=Red        guibg=Red                                          cterm=NONE         gui=NONE
    hi ansiGreenBg           ctermbg=Green      guibg=Green                                        cterm=NONE         gui=NONE
-   hi ansiYellowBg          ctermbg=Yellow     guibg=Yellow                                       cterm=NONE         gui=NONE
+   hi ansiYellowBg          ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=NONE         gui=NONE
    hi ansiBlueBg            ctermbg=Blue       guibg=Blue                                         cterm=NONE         gui=NONE
    hi ansiMagentaBg         ctermbg=Magenta    guibg=Magenta                                      cterm=NONE         gui=NONE
    hi ansiCyanBg            ctermbg=Cyan       guibg=Cyan                                         cterm=NONE         gui=NONE
@@ -1851,7 +1851,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackReverseBg           ctermbg=Black      guibg=Black                                        cterm=reverse         gui=reverse
    hi ansiRedReverseBg             ctermbg=Red        guibg=Red                                          cterm=reverse         gui=reverse
    hi ansiGreenReverseBg           ctermbg=Green      guibg=Green                                        cterm=reverse         gui=reverse
-   hi ansiYellowReverseBg          ctermbg=Yellow     guibg=Yellow                                       cterm=reverse         gui=reverse
+   hi ansiYellowReverseBg          ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=reverse         gui=reverse
    hi ansiBlueReverseBg            ctermbg=Blue       guibg=Blue                                         cterm=reverse         gui=reverse
    hi ansiMagentaReverseBg         ctermbg=Magenta    guibg=Magenta                                      cterm=reverse         gui=reverse
    hi ansiCyanReverseBg            ctermbg=Cyan       guibg=Cyan                                         cterm=reverse         gui=reverse
@@ -1863,7 +1863,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBoldBlack         ctermfg=Black      guifg=Black                                        cterm=bold         gui=bold
    hi ansiBoldRed           ctermfg=Red        guifg=Red                                          cterm=bold         gui=bold
    hi ansiBoldGreen         ctermfg=Green      guifg=Green                                        cterm=bold         gui=bold
-   hi ansiBoldYellow        ctermfg=Yellow     guifg=Yellow                                       cterm=bold         gui=bold
+   hi ansiBoldYellow        ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=bold         gui=bold
    hi ansiBoldBlue          ctermfg=Blue       guifg=Blue                                         cterm=bold         gui=bold
    hi ansiBoldMagenta       ctermfg=Magenta    guifg=Magenta                                      cterm=bold         gui=bold
    hi ansiBoldCyan          ctermfg=Cyan       guifg=Cyan                                         cterm=bold         gui=bold
@@ -1873,7 +1873,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackBold         ctermbg=Black      guibg=Black                                        cterm=bold         gui=bold
    hi ansiRedBold           ctermbg=Red        guibg=Red                                          cterm=bold         gui=bold
    hi ansiGreenBold         ctermbg=Green      guibg=Green                                        cterm=bold         gui=bold
-   hi ansiYellowBold        ctermbg=Yellow     guibg=Yellow                                       cterm=bold         gui=bold
+   hi ansiYellowBold        ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=bold         gui=bold
    hi ansiBlueBold          ctermbg=Blue       guibg=Blue                                         cterm=bold         gui=bold
    hi ansiMagentaBold       ctermbg=Magenta    guibg=Magenta                                      cterm=bold         gui=bold
    hi ansiCyanBold          ctermbg=Cyan       guibg=Cyan                                         cterm=bold         gui=bold
@@ -1887,7 +1887,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiReverseBlack      ctermfg=Black      guifg=Black                                        cterm=reverse         gui=reverse
    hi ansiReverseRed        ctermfg=Red        guifg=Red                                          cterm=reverse         gui=reverse
    hi ansiReverseGreen      ctermfg=Green      guifg=Green                                        cterm=reverse         gui=reverse
-   hi ansiReverseYellow     ctermfg=Yellow     guifg=Yellow                                       cterm=reverse         gui=reverse
+   hi ansiReverseYellow     ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=reverse         gui=reverse
    hi ansiReverseBlue       ctermfg=Blue       guifg=Blue                                         cterm=reverse         gui=reverse
    hi ansiReverseMagenta    ctermfg=Magenta    guifg=Magenta                                      cterm=reverse         gui=reverse
    hi ansiReverseCyan       ctermfg=Cyan       guifg=Cyan                                         cterm=reverse         gui=reverse
@@ -1898,7 +1898,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiStandoutBlack     ctermfg=Black      guifg=Black                                        cterm=standout     gui=standout
    hi ansiStandoutRed       ctermfg=Red        guifg=Red                                          cterm=standout     gui=standout
    hi ansiStandoutGreen     ctermfg=Green      guifg=Green                                        cterm=standout     gui=standout
-   hi ansiStandoutYellow    ctermfg=Yellow     guifg=Yellow                                       cterm=standout     gui=standout
+   hi ansiStandoutYellow    ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=standout
    hi ansiStandoutBlue      ctermfg=Blue       guifg=Blue                                         cterm=standout     gui=standout
    hi ansiStandoutMagenta   ctermfg=Magenta    guifg=Magenta                                      cterm=standout     gui=standout
    hi ansiStandoutCyan      ctermfg=Cyan       guifg=Cyan                                         cterm=standout     gui=standout
@@ -1909,7 +1909,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiItalicBlack       ctermfg=Black      guifg=Black                                        cterm=italic       gui=italic
    hi ansiItalicRed         ctermfg=Red        guifg=Red                                          cterm=italic       gui=italic
    hi ansiItalicGreen       ctermfg=Green      guifg=Green                                        cterm=italic       gui=italic
-   hi ansiItalicYellow      ctermfg=Yellow     guifg=Yellow                                       cterm=italic       gui=italic
+   hi ansiItalicYellow      ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=italic       gui=italic
    hi ansiItalicBlue        ctermfg=Blue       guifg=Blue                                         cterm=italic       gui=italic
    hi ansiItalicMagenta     ctermfg=Magenta    guifg=Magenta                                      cterm=italic       gui=italic
    hi ansiItalicCyan        ctermfg=Cyan       guifg=Cyan                                         cterm=italic       gui=italic
@@ -1920,7 +1920,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiUnderlineBlack    ctermfg=Black      guifg=Black                                        cterm=underline    gui=underline
    hi ansiUnderlineRed      ctermfg=Red        guifg=Red                                          cterm=underline    gui=underline
    hi ansiUnderlineGreen    ctermfg=Green      guifg=Green                                        cterm=underline    gui=underline
-   hi ansiUnderlineYellow   ctermfg=Yellow     guifg=Yellow                                       cterm=underline    gui=underline
+   hi ansiUnderlineYellow   ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=underline    gui=underline
    hi ansiUnderlineBlue     ctermfg=Blue       guifg=Blue                                         cterm=underline    gui=underline
    hi ansiUnderlineMagenta  ctermfg=Magenta    guifg=Magenta                                      cterm=underline    gui=underline
    hi ansiUnderlineCyan     ctermfg=Cyan       guifg=Cyan                                         cterm=underline    gui=underline
@@ -1930,7 +1930,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackUnderline    ctermbg=Black      guibg=Black                                        cterm=underline    gui=underline
    hi ansiRedUnderline      ctermbg=Red        guibg=Red                                          cterm=underline    gui=underline
    hi ansiGreenUnderline    ctermbg=Green      guibg=Green                                        cterm=underline    gui=underline
-   hi ansiYellowUnderline   ctermbg=Yellow     guibg=Yellow                                       cterm=underline    gui=underline
+   hi ansiYellowUnderline   ctermbg=DarkYellow     guibg=DarkYellow                                       cterm=underline    gui=underline
    hi ansiBlueUnderline     ctermbg=Blue       guibg=Blue                                         cterm=underline    gui=underline
    hi ansiMagentaUnderline  ctermbg=Magenta    guibg=Magenta                                      cterm=underline    gui=underline
    hi ansiCyanUnderline     ctermbg=Cyan       guibg=Cyan                                         cterm=underline    gui=underline
@@ -1941,7 +1941,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlinkBlack        ctermfg=Black      guifg=Black                                        cterm=standout     gui=undercurl
    hi ansiBlinkRed          ctermfg=Red        guifg=Red                                          cterm=standout     gui=undercurl
    hi ansiBlinkGreen        ctermfg=Green      guifg=Green                                        cterm=standout     gui=undercurl
-   hi ansiBlinkYellow       ctermfg=Yellow     guifg=Yellow                                       cterm=standout     gui=undercurl
+   hi ansiBlinkYellow       ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=undercurl
    hi ansiBlinkBlue         ctermfg=Blue       guifg=Blue                                         cterm=standout     gui=undercurl
    hi ansiBlinkMagenta      ctermfg=Magenta    guifg=Magenta                                      cterm=standout     gui=undercurl
    hi ansiBlinkCyan         ctermfg=Cyan       guifg=Cyan                                         cterm=standout     gui=undercurl
@@ -1952,7 +1952,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiRapidBlinkBlack   ctermfg=Black      guifg=Black                                        cterm=standout     gui=undercurl
    hi ansiRapidBlinkRed     ctermfg=Red        guifg=Red                                          cterm=standout     gui=undercurl
    hi ansiRapidBlinkGreen   ctermfg=Green      guifg=Green                                        cterm=standout     gui=undercurl
-   hi ansiRapidBlinkYellow  ctermfg=Yellow     guifg=Yellow                                       cterm=standout     gui=undercurl
+   hi ansiRapidBlinkYellow  ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=standout     gui=undercurl
    hi ansiRapidBlinkBlue    ctermfg=Blue       guifg=Blue                                         cterm=standout     gui=undercurl
    hi ansiRapidBlinkMagenta ctermfg=Magenta    guifg=Magenta                                      cterm=standout     gui=undercurl
    hi ansiRapidBlinkCyan    ctermfg=Cyan       guifg=Cyan                                         cterm=standout     gui=undercurl
@@ -1963,7 +1963,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiRVBlack           ctermfg=Black      guifg=Black                                        cterm=reverse      gui=reverse
    hi ansiRVRed             ctermfg=Red        guifg=Red                                          cterm=reverse      gui=reverse
    hi ansiRVGreen           ctermfg=Green      guifg=Green                                        cterm=reverse      gui=reverse
-   hi ansiRVYellow          ctermfg=Yellow     guifg=Yellow                                       cterm=reverse      gui=reverse
+   hi ansiRVYellow          ctermfg=DarkYellow     guifg=DarkYellow                                       cterm=reverse      gui=reverse
    hi ansiRVBlue            ctermfg=Blue       guifg=Blue                                         cterm=reverse      gui=reverse
    hi ansiRVMagenta         ctermfg=Magenta    guifg=Magenta                                      cterm=reverse      gui=reverse
    hi ansiRVCyan            ctermfg=Cyan       guifg=Cyan                                         cterm=reverse      gui=reverse
@@ -1975,7 +1975,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackDefault        ctermfg=Black          ctermbg=NONE      guifg=Black          guibg=NONE    cterm=NONE         gui=NONE
    hi ansiRedDefault          ctermfg=Red        ctermbg=NONE      guifg=Red        guibg=NONE    cterm=NONE         gui=NONE
    hi ansiGreenDefault        ctermfg=Green      ctermbg=NONE      guifg=Green      guibg=NONE    cterm=NONE         gui=NONE
-   hi ansiYellowDefault       ctermfg=Yellow     ctermbg=NONE      guifg=Yellow     guibg=NONE    cterm=NONE         gui=NONE
+   hi ansiYellowDefault       ctermfg=DarkYellow     ctermbg=NONE      guifg=DarkYellow     guibg=NONE    cterm=NONE         gui=NONE
    hi ansiBlueDefault         ctermfg=Blue       ctermbg=NONE      guifg=Blue       guibg=NONE    cterm=NONE         gui=NONE
    hi ansiMagentaDefault      ctermfg=Magenta    ctermbg=NONE      guifg=Magenta    guibg=NONE    cterm=NONE         gui=NONE
    hi ansiCyanDefault         ctermfg=Cyan       ctermbg=NONE      guifg=Cyan       guibg=NONE    cterm=NONE         gui=NONE
@@ -1986,7 +1986,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiDefaultBlack        ctermfg=NONE      ctermbg=Black      guifg=NONE       guibg=Black   cterm=NONE         gui=NONE
    hi ansiDefaultRed          ctermfg=NONE        ctermbg=Red      guifg=NONE        guibg=Red    cterm=NONE         gui=NONE
    hi ansiDefaultGreen        ctermfg=NONE      ctermbg=Green      guifg=NONE      guibg=Green    cterm=NONE         gui=NONE
-   hi ansiDefaultYellow       ctermfg=NONE     ctermbg=Yellow      guifg=NONE     guibg=Yellow    cterm=NONE         gui=NONE
+   hi ansiDefaultYellow       ctermfg=NONE     ctermbg=DarkYellow      guifg=NONE     guibg=DarkYellow    cterm=NONE         gui=NONE
    hi ansiDefaultBlue         ctermfg=NONE       ctermbg=Blue      guifg=NONE       guibg=Blue    cterm=NONE         gui=NONE
    hi ansiDefaultMagenta      ctermfg=NONE    ctermbg=Magenta      guifg=NONE    guibg=Magenta    cterm=NONE         gui=NONE
    hi ansiDefaultCyan         ctermfg=NONE       ctermbg=Cyan      guifg=NONE       guibg=Cyan    cterm=NONE         gui=NONE
@@ -1996,7 +1996,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackBlack        ctermfg=Black      ctermbg=Black      guifg=Black      guibg=Black    cterm=NONE         gui=NONE
    hi ansiRedBlack          ctermfg=Red        ctermbg=Black      guifg=Red        guibg=Black    cterm=NONE         gui=NONE
    hi ansiGreenBlack        ctermfg=Green      ctermbg=Black      guifg=Green      guibg=Black    cterm=NONE         gui=NONE
-   hi ansiYellowBlack       ctermfg=Yellow     ctermbg=Black      guifg=Yellow     guibg=Black    cterm=NONE         gui=NONE
+   hi ansiYellowBlack       ctermfg=DarkYellow     ctermbg=Black      guifg=DarkYellow     guibg=Black    cterm=NONE         gui=NONE
    hi ansiBlueBlack         ctermfg=Blue       ctermbg=Black      guifg=Blue       guibg=Black    cterm=NONE         gui=NONE
    hi ansiMagentaBlack      ctermfg=Magenta    ctermbg=Black      guifg=Magenta    guibg=Black    cterm=NONE         gui=NONE
    hi ansiCyanBlack         ctermfg=Cyan       ctermbg=Black      guifg=Cyan       guibg=Black    cterm=NONE         gui=NONE
@@ -2006,7 +2006,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackRed          ctermfg=Black      ctermbg=Red        guifg=Black      guibg=Red      cterm=NONE         gui=NONE
    hi ansiRedRed            ctermfg=Red        ctermbg=Red        guifg=Red        guibg=Red      cterm=NONE         gui=NONE
    hi ansiGreenRed          ctermfg=Green      ctermbg=Red        guifg=Green      guibg=Red      cterm=NONE         gui=NONE
-   hi ansiYellowRed         ctermfg=Yellow     ctermbg=Red        guifg=Yellow     guibg=Red      cterm=NONE         gui=NONE
+   hi ansiYellowRed         ctermfg=DarkYellow     ctermbg=Red        guifg=DarkYellow     guibg=Red      cterm=NONE         gui=NONE
    hi ansiBlueRed           ctermfg=Blue       ctermbg=Red        guifg=Blue       guibg=Red      cterm=NONE         gui=NONE
    hi ansiMagentaRed        ctermfg=Magenta    ctermbg=Red        guifg=Magenta    guibg=Red      cterm=NONE         gui=NONE
    hi ansiCyanRed           ctermfg=Cyan       ctermbg=Red        guifg=Cyan       guibg=Red      cterm=NONE         gui=NONE
@@ -2016,27 +2016,27 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackGreen        ctermfg=Black      ctermbg=Green      guifg=Black      guibg=Green    cterm=NONE         gui=NONE
    hi ansiRedGreen          ctermfg=Red        ctermbg=Green      guifg=Red        guibg=Green    cterm=NONE         gui=NONE
    hi ansiGreenGreen        ctermfg=Green      ctermbg=Green      guifg=Green      guibg=Green    cterm=NONE         gui=NONE
-   hi ansiYellowGreen       ctermfg=Yellow     ctermbg=Green      guifg=Yellow     guibg=Green    cterm=NONE         gui=NONE
+   hi ansiYellowGreen       ctermfg=DarkYellow     ctermbg=Green      guifg=DarkYellow     guibg=Green    cterm=NONE         gui=NONE
    hi ansiBlueGreen         ctermfg=Blue       ctermbg=Green      guifg=Blue       guibg=Green    cterm=NONE         gui=NONE
    hi ansiMagentaGreen      ctermfg=Magenta    ctermbg=Green      guifg=Magenta    guibg=Green    cterm=NONE         gui=NONE
    hi ansiCyanGreen         ctermfg=Cyan       ctermbg=Green      guifg=Cyan       guibg=Green    cterm=NONE         gui=NONE
    hi ansiWhiteGreen        ctermfg=LightGray      ctermbg=Green      guifg=LightGray      guibg=Green    cterm=NONE         gui=NONE
    hi ansiGrayGreen         ctermfg=Gray      ctermbg=Green      guifg=Gray      guibg=Green    cterm=NONE         gui=NONE
 
-   hi ansiBlackYellow       ctermfg=Black      ctermbg=Yellow     guifg=Black      guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiRedYellow         ctermfg=Red        ctermbg=Yellow     guifg=Red        guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiGreenYellow       ctermfg=Green      ctermbg=Yellow     guifg=Green      guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiYellowYellow      ctermfg=Yellow     ctermbg=Yellow     guifg=Yellow     guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiBlueYellow        ctermfg=Blue       ctermbg=Yellow     guifg=Blue       guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiMagentaYellow     ctermfg=Magenta    ctermbg=Yellow     guifg=Magenta    guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiCyanYellow        ctermfg=Cyan       ctermbg=Yellow     guifg=Cyan       guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiWhiteYellow       ctermfg=LightGray      ctermbg=Yellow     guifg=LightGray      guibg=Yellow   cterm=NONE         gui=NONE
-   hi ansiGrayYellow        ctermfg=Gray      ctermbg=Yellow     guifg=Gray      guibg=Yellow   cterm=NONE         gui=NONE
+   hi ansiBlackYellow       ctermfg=Black      ctermbg=DarkYellow     guifg=Black      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiRedYellow         ctermfg=Red        ctermbg=DarkYellow     guifg=Red        guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiGreenYellow       ctermfg=Green      ctermbg=DarkYellow     guifg=Green      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiYellowYellow      ctermfg=DarkYellow     ctermbg=DarkYellow     guifg=DarkYellow     guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiBlueYellow        ctermfg=Blue       ctermbg=DarkYellow     guifg=Blue       guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiMagentaYellow     ctermfg=Magenta    ctermbg=DarkYellow     guifg=Magenta    guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiCyanYellow        ctermfg=Cyan       ctermbg=DarkYellow     guifg=Cyan       guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiWhiteYellow       ctermfg=LightGray      ctermbg=DarkYellow     guifg=LightGray      guibg=DarkYellow   cterm=NONE         gui=NONE
+   hi ansiGrayYellow        ctermfg=Gray      ctermbg=DarkYellow     guifg=Gray      guibg=DarkYellow   cterm=NONE         gui=NONE
 
    hi ansiBlackBlue         ctermfg=Black      ctermbg=Blue       guifg=Black      guibg=Blue     cterm=NONE         gui=NONE
    hi ansiRedBlue           ctermfg=Red        ctermbg=Blue       guifg=Red        guibg=Blue     cterm=NONE         gui=NONE
    hi ansiGreenBlue         ctermfg=Green      ctermbg=Blue       guifg=Green      guibg=Blue     cterm=NONE         gui=NONE
-   hi ansiYellowBlue        ctermfg=Yellow     ctermbg=Blue       guifg=Yellow     guibg=Blue     cterm=NONE         gui=NONE
+   hi ansiYellowBlue        ctermfg=DarkYellow     ctermbg=Blue       guifg=DarkYellow     guibg=Blue     cterm=NONE         gui=NONE
    hi ansiBlueBlue          ctermfg=Blue       ctermbg=Blue       guifg=Blue       guibg=Blue     cterm=NONE         gui=NONE
    hi ansiMagentaBlue       ctermfg=Magenta    ctermbg=Blue       guifg=Magenta    guibg=Blue     cterm=NONE         gui=NONE
    hi ansiCyanBlue          ctermfg=Cyan       ctermbg=Blue       guifg=Cyan       guibg=Blue     cterm=NONE         gui=NONE
@@ -2046,7 +2046,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackMagenta      ctermfg=Black      ctermbg=Magenta    guifg=Black      guibg=Magenta  cterm=NONE         gui=NONE
    hi ansiRedMagenta        ctermfg=Red        ctermbg=Magenta    guifg=Red        guibg=Magenta  cterm=NONE         gui=NONE
    hi ansiGreenMagenta      ctermfg=Green      ctermbg=Magenta    guifg=Green      guibg=Magenta  cterm=NONE         gui=NONE
-   hi ansiYellowMagenta     ctermfg=Yellow     ctermbg=Magenta    guifg=Yellow     guibg=Magenta  cterm=NONE         gui=NONE
+   hi ansiYellowMagenta     ctermfg=DarkYellow     ctermbg=Magenta    guifg=DarkYellow     guibg=Magenta  cterm=NONE         gui=NONE
    hi ansiBlueMagenta       ctermfg=Blue       ctermbg=Magenta    guifg=Blue       guibg=Magenta  cterm=NONE         gui=NONE
    hi ansiMagentaMagenta    ctermfg=Magenta    ctermbg=Magenta    guifg=Magenta    guibg=Magenta  cterm=NONE         gui=NONE
    hi ansiCyanMagenta       ctermfg=Cyan       ctermbg=Magenta    guifg=Cyan       guibg=Magenta  cterm=NONE         gui=NONE
@@ -2056,7 +2056,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackCyan         ctermfg=Black      ctermbg=Cyan       guifg=Black      guibg=Cyan     cterm=NONE         gui=NONE
    hi ansiRedCyan           ctermfg=Red        ctermbg=Cyan       guifg=Red        guibg=Cyan     cterm=NONE         gui=NONE
    hi ansiGreenCyan         ctermfg=Green      ctermbg=Cyan       guifg=Green      guibg=Cyan     cterm=NONE         gui=NONE
-   hi ansiYellowCyan        ctermfg=Yellow     ctermbg=Cyan       guifg=Yellow     guibg=Cyan     cterm=NONE         gui=NONE
+   hi ansiYellowCyan        ctermfg=DarkYellow     ctermbg=Cyan       guifg=DarkYellow     guibg=Cyan     cterm=NONE         gui=NONE
    hi ansiBlueCyan          ctermfg=Blue       ctermbg=Cyan       guifg=Blue       guibg=Cyan     cterm=NONE         gui=NONE
    hi ansiMagentaCyan       ctermfg=Magenta    ctermbg=Cyan       guifg=Magenta    guibg=Cyan     cterm=NONE         gui=NONE
    hi ansiCyanCyan          ctermfg=Cyan       ctermbg=Cyan       guifg=Cyan       guibg=Cyan     cterm=NONE         gui=NONE
@@ -2066,7 +2066,7 @@ fun! AnsiEsc#AnsiEsc(rebuild)
    hi ansiBlackWhite        ctermfg=Black      ctermbg=LightGray      guifg=Black      guibg=LightGray    cterm=NONE         gui=NONE
    hi ansiRedWhite          ctermfg=Red        ctermbg=LightGray      guifg=Red        guibg=LightGray    cterm=NONE         gui=NONE
    hi ansiGreenWhite        ctermfg=Green      ctermbg=LightGray      guifg=Green      guibg=LightGray    cterm=NONE         gui=NONE
-   hi ansiYellowWhite       ctermfg=Yellow     ctermbg=LightGray      guifg=Yellow     guibg=LightGray    cterm=NONE         gui=NONE
+   hi ansiYellowWhite       ctermfg=DarkYellow     ctermbg=LightGray      guifg=DarkYellow     guibg=LightGray    cterm=NONE         gui=NONE
    hi ansiBlueWhite         ctermfg=Blue       ctermbg=LightGray      guifg=Blue       guibg=LightGray    cterm=NONE         gui=NONE
    hi ansiMagentaWhite      ctermfg=Magenta    ctermbg=LightGray      guifg=Magenta    guibg=LightGray    cterm=NONE         gui=NONE
    hi ansiCyanWhite         ctermfg=Cyan       ctermbg=LightGray      guifg=Cyan       guibg=LightGray    cterm=NONE         gui=NONE
